@@ -1,0 +1,13 @@
+{
+	"name": "Floating Block",
+	"icon": "opolisutilities:textures/block/floating_block_block.png",
+
+	"category": "opolisutilities:advanced_items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "text",
+			"text": "The floating block can be placed in mid air without any supporting block around it.$(br2)It can also be placed in water."
+		}
+	]
+}

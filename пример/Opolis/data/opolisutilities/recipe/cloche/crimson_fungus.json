@@ -1,0 +1,20 @@
+{
+  "type": "opolisutilities:cloche",
+  "catalyst": [],
+  "chanceOutput1": {
+    "count": 1,
+    "id": "minecraft:crimson_fungus"
+  },
+  "chanceOutputChance1": 0.15,
+  "durationModifier": 2.0,
+  "mainOutput": {
+    "count": 2,
+    "id": "minecraft:crimson_stem"
+  },
+  "seed": {
+    "item": "minecraft:crimson_fungus"
+  },
+  "soil": {
+    "tag": "minecraft:dirt"
+  }
+}

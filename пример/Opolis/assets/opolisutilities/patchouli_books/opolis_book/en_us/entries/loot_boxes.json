@@ -1,0 +1,12 @@
+{
+	"name": "Loot Boxes",
+	"icon": "opolisutilities:textures/item/basic_loot_box.png",
+	"category": "opolisutilities:basic_items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "text",
+			"text": "Basic loot boxes will have a chance to drop from any mob when it is killed.$(br2)Generates items based on a loot table found in opolisutilities/ loot_tables / loot_boxes."
+		}
+	]
+}

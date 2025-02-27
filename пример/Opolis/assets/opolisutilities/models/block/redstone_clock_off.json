@@ -1,0 +1,12 @@
+{
+	"parent": "minecraft:block/cube",
+	"textures": {
+		"north": "opolisutilities:block/redstone_clock_side_off",
+		"east": "opolisutilities:block/redstone_clock_side_off",
+		"south": "opolisutilities:block/redstone_clock_side_off",
+		"west": "opolisutilities:block/redstone_clock_side_off",
+		"up": "opolisutilities:block/machine_top",
+		"down": "opolisutilities:block/machine_top",
+		"particle": "opolisutilities:block/redstone_clock_side_off"
+	}
+}

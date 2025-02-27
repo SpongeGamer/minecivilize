@@ -1,0 +1,6 @@
+{
+	"name": "Home Stones",
+	"description": "Various different types of home stone which can be used to teleport back to a saved location.",
+	"icon": "opolisutilities:home_stone",
+	"sortnum": 3
+}

@@ -1,0 +1,15 @@
+{
+  "type": "opolisutilities:cloche",
+  "catalyst": [],
+  "durationModifier": 2.6,
+  "mainOutput": {
+    "count": 1,
+    "id": "minecraft:sugar_cane"
+  },
+  "seed": {
+    "item": "minecraft:sugar_cane"
+  },
+  "soil": {
+    "tag": "minecraft:dirt"
+  }
+}

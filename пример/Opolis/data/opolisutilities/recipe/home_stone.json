@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "opolisutilities",
+  "key": {
+    "C": {
+      "item": "minecraft:compass"
+    },
+    "D": {
+      "tag": "minecraft:beds"
+    },
+    "E": {
+      "item": "opolisutilities:ender_pearl_fragment"
+    }
+  },
+  "pattern": [
+    "ECE",
+    "CDC",
+    "ECE"
+  ],
+  "result": {
+    "count": 1,
+    "id": "opolisutilities:home_stone"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "opolisutilities",
+  "key": {
+    "A": {
+      "tag": "c:ingots/iron"
+    },
+    "C": {
+      "item": "minecraft:crafter"
+    },
+    "S": {
+      "tag": "c:stones"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "ACA",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "opolisutilities:crafter"
+  }
+}

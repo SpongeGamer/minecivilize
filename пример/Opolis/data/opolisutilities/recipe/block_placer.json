@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "opolisutilities",
+  "key": {
+    "A": {
+      "tag": "c:ingots/iron"
+    },
+    "S": {
+      "tag": "c:stones"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "A A",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "opolisutilities:block_placer"
+  }
+}

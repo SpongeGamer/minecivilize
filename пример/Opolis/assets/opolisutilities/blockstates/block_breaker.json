@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "opolisutilities:block/block_breaker_vertical",
+      "x": 180
+    },
+    "facing=down": {
+      "model": "opolisutilities:block/block_breaker_vertical",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "opolisutilities:block/block_breaker",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "opolisutilities:block/block_breaker"
+    },
+    "facing=south": {
+      "model": "opolisutilities:block/block_breaker",
+      "y": 180
+    },
+    "facing=up": {
+      "model": "opolisutilities:block/block_breaker_vertical"
+    },
+    "facing=west": {
+      "model": "opolisutilities:block/block_breaker",
+      "y": 270
+    }
+  }
+}

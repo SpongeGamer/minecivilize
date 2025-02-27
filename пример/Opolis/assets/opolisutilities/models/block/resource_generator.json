@@ -1,0 +1,12 @@
+{
+	"parent": "minecraft:block/cube",
+	"textures": {
+		"north": "opolisutilities:block/machine_side",
+		"east": "opolisutilities:block/machine_side",
+		"south": "opolisutilities:block/machine_side",
+		"west": "opolisutilities:block/machine_side",
+		"up": "opolisutilities:block/machine_top",
+		"down": "opolisutilities:block/machine_top",
+		"particle": "opolisutilities:block/machine_side"
+	}
+}

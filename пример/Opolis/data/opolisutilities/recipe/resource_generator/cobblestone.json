@@ -1,0 +1,6 @@
+{
+  "type": "opolisutilities:resource_generator",
+  "input": {
+    "tag": "c:cobblestones"
+  }
+}

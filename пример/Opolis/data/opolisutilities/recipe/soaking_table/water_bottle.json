@@ -1,0 +1,17 @@
+{
+  "type": "opolisutilities:soaking_table",
+  "duration": 200,
+  "input": {
+    "count": 1,
+    "item": "minecraft:glass_bottle"
+  },
+  "output": {
+    "components": {
+      "minecraft:potion_contents": {
+        "potion": "minecraft:water"
+      }
+    },
+    "count": 1,
+    "id": "minecraft:potion"
+  }
+}

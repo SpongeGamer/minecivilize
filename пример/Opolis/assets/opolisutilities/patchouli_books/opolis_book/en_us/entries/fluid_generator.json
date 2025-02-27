@@ -1,0 +1,52 @@
+{
+	"name": "Fluid Generator",
+	"icon": "opolisutilities:fluid_generator",
+	"category": "opolisutilities:advanced_items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "text",
+			"text": "The fluid generator is a block that will create fluids and output the fluid into a tank below. Works for both Lava and Water.$(br2)The blue wool has to be a compatible fluid and the glass block needs to be a valid tank(any block that can store fluids should work)."
+		},
+		{
+        	"type": "multiblock",
+        	"multiblock": {
+        		"pattern": [
+        			["S"],
+        			["R"],
+        			["0"],
+        			[" "]
+        		],
+        		"mapping": {
+        			"S": "minecraft:blue_wool",
+        			"R": "opolisutilities:fluid_generator",
+        			"0": "#forge:glass"
+        		}
+        	},
+        	"text": "Basic Fluid Generator setup. Produces an amount of fluid every 11 seconds."
+        },
+		{
+        	"type": "multiblock",
+        	"multiblock": {
+        		"pattern": [
+        		    ["B"],
+        			["S"],
+        			["R"],
+        			["0"],
+        			[" "]
+        		],
+        		"mapping": {
+        		    "B": "minecraft:gold_block",
+        			"S": "minecraft:blue_wool",
+        			"R": "opolisutilities:fluid_generator",
+        			"0": "#forge:glass"
+        		}
+        	},
+        	"text": "Speed blocks can be placed on top to increase the speed fluid is produced."
+        },
+        {
+        	"type": "text",
+        	"text": "Pressing U on the fluid generator it will show all the fluids that it can create as well as any blocks that can effect the speed it produces fluids."
+        }
+	]
+}

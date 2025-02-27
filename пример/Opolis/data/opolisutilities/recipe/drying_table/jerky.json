@@ -1,0 +1,12 @@
+{
+  "type": "opolisutilities:drying_table",
+  "duration": 200,
+  "input": {
+    "count": 1,
+    "tag": "c:foods/raw_meat"
+  },
+  "output": {
+    "count": 1,
+    "id": "opolisutilities:jerky"
+  }
+}

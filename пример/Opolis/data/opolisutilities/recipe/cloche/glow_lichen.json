@@ -1,0 +1,15 @@
+{
+  "type": "opolisutilities:cloche",
+  "catalyst": [],
+  "durationModifier": 2.0,
+  "mainOutput": {
+    "count": 1,
+    "id": "minecraft:glow_lichen"
+  },
+  "seed": {
+    "item": "minecraft:glow_lichen"
+  },
+  "soil": {
+    "tag": "c:stones"
+  }
+}

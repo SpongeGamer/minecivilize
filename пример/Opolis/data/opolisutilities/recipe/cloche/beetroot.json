@@ -1,0 +1,20 @@
+{
+  "type": "opolisutilities:cloche",
+  "catalyst": [],
+  "chanceOutput1": {
+    "count": 1,
+    "id": "minecraft:beetroot_seeds"
+  },
+  "chanceOutputChance1": 0.15,
+  "durationModifier": 1.8,
+  "mainOutput": {
+    "count": 1,
+    "id": "minecraft:beetroot"
+  },
+  "seed": {
+    "item": "minecraft:beetroot_seeds"
+  },
+  "soil": {
+    "tag": "minecraft:dirt"
+  }
+}

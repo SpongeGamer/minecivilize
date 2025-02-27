@@ -1,0 +1,28 @@
+{
+	"name": "Catalogue",
+	"icon": "opolisutilities:catalogue",
+	"category": "opolisutilities:advanced_items",
+	"sortnum": 11,
+	"pages": [
+		{
+    		"type": "spotlight",
+    		"item": "opolisutilities:catalogue",
+    		"text": "Can be used to buy and sell items!$(br2)Some items may need more than 64 of a given item this is where you can use the wallet!$(br2)Uses JSON recipes handy for modpack devs$(br2)Has full JEI support."
+    	},
+		{
+			"type": "crafting",
+			"recipe": "opolisutilities:catalogue",
+			"text": "The Stock Market!"
+		},
+		{
+    		"type": "spotlight",
+    		"item": "opolisutilities:catalogue_book",
+    		"text": "A portable version of the Catalogue."
+    	},
+		{
+			"type": "crafting",
+			"recipe": "opolisutilities:catalogue_book",
+			"text": "The Stock Market on the go!"
+		}
+	]
+}

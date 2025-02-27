@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "opolisutilities:block/catalogue",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "opolisutilities:block/catalogue"
+    },
+    "facing=south": {
+      "model": "opolisutilities:block/catalogue",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "opolisutilities:block/catalogue",
+      "y": 270
+    }
+  }
+}

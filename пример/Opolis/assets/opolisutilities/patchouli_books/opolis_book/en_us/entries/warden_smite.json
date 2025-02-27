@@ -1,0 +1,12 @@
+{
+	"name": "Warden Smite",
+	"icon": "minecraft:textures/item/enchanted_book.png",
+	"category": "opolisutilities:enchantments",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "text",
+			"text": "Has a max of 5 levels.$(br2)Each level does a additional 100 damage to a warden.$(br2)This means a level 5 enchant will kill a warden in 1 hit!"
+		}
+	]
+}

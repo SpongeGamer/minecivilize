@@ -1,0 +1,12 @@
+{
+	"name": "Copper Nuggets",
+	"icon": "opolisutilities:textures/item/copper_nugget.png",
+	"category": "opolisutilities:basic_items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "text",
+			"text": "Adds Copper Nuggets because minecraft doesn't."
+		}
+	]
+}

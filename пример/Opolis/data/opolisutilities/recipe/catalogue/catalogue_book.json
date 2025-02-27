@@ -1,0 +1,11 @@
+{
+  "type": "opolisutilities:catalogue",
+  "input": {
+    "count": 2,
+    "item": "opolisutilities:b_bucks"
+  },
+  "output": {
+    "count": 1,
+    "id": "opolisutilities:catalogue_book"
+  }
+}

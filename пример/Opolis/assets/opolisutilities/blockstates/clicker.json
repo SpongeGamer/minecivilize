@@ -1,0 +1,26 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "opolisutilities:block/clicker_vertical",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "opolisutilities:block/clicker",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "opolisutilities:block/clicker"
+    },
+    "facing=south": {
+      "model": "opolisutilities:block/clicker",
+      "y": 180
+    },
+    "facing=up": {
+      "model": "opolisutilities:block/clicker_vertical"
+    },
+    "facing=west": {
+      "model": "opolisutilities:block/clicker",
+      "y": 270
+    }
+  }
+}

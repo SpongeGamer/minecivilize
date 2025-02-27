@@ -1,0 +1,11 @@
+{
+  "type": "opolisutilities:summoning_block",
+  "catalyst": {
+    "item": "minecraft:mycelium"
+  },
+  "input": {
+    "count": 1,
+    "tag": "c:mushrooms"
+  },
+  "mob": "minecraft:mooshroom"
+}

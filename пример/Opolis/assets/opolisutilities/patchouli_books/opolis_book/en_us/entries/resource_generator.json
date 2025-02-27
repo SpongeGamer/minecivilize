@@ -1,0 +1,12 @@
+{
+	"name": "Resource Generator",
+	"icon": "opolisutilities:resource_generator",
+	"category": "opolisutilities:advanced_items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "text",
+			"text": "The resource generator is a basic block that will duplicate items like cobblestone and stone."
+		}
+	]
+}

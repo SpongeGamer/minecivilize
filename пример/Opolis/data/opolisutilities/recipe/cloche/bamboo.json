@@ -1,0 +1,15 @@
+{
+  "type": "opolisutilities:cloche",
+  "catalyst": [],
+  "durationModifier": 2.6,
+  "mainOutput": {
+    "count": 1,
+    "id": "minecraft:bamboo"
+  },
+  "seed": {
+    "item": "minecraft:bamboo"
+  },
+  "soil": {
+    "tag": "minecraft:dirt"
+  }
+}

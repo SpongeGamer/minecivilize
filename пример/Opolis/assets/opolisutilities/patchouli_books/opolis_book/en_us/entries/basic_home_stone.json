@@ -1,0 +1,12 @@
+{
+	"name": "Home Stone",
+	"icon": "opolisutilities:textures/item/home_stone.png",
+	"category": "opolisutilities:home_stones",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "text",
+			"text": "A Home Stone can be used to teleport back to a previously saved location, only works in the overworld."
+		}
+	]
+}

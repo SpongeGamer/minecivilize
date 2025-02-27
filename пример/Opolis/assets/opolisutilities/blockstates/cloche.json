@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "opolisutilities:block/cloche"
+    },
+    "powered=true": {
+       "model": "opolisutilities:block/cloche_working"
+    }
+  }
+}

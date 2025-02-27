@@ -1,0 +1,11 @@
+{
+  "type": "opolisutilities:summoning_block",
+  "catalyst": {
+    "item": "minecraft:sand"
+  },
+  "input": {
+    "count": 1,
+    "item": "minecraft:cactus"
+  },
+  "mob": "minecraft:camel"
+}

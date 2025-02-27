@@ -1,0 +1,15 @@
+{
+    "required": true,
+    "package": "com.benbenlaw.opolisutilities.mixin",
+    "compatibilityLevel": "JAVA_21",
+    "mixins": [
+        "StillValidMixin"
+
+    ],
+    "client": [
+    ],
+    "injectors": {
+    "defaultRequire": 1
+    }
+
+}

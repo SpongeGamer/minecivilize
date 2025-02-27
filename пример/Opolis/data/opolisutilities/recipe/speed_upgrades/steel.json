@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:storage_blocks/steel"
+      }
+    }
+  ],
+  "type": "opolisutilities:speed_upgrades",
+  "input": {
+    "tag": "c:storage_blocks/steel"
+  },
+  "tickRate": 130
+}

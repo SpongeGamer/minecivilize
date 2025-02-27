@@ -1,0 +1,22 @@
+{
+	"name": "Drying Table",
+	"icon": "opolisutilities:drying_table",
+	"category": "opolisutilities:advanced_items",
+	"sortnum": 3,
+	"pages": [
+		{
+    		"type": "spotlight",
+    		"item": "opolisutilities:drying_table",
+    		"text": "Can be used to dry items."
+    	},
+		{
+			"type": "crafting",
+			"recipe": "opolisutilities:drying_table",
+			"text": "Can be used to dry items."
+		},
+		{
+			"type": "text",
+			"text": "The Drying Table can also be waterlogged, when waterlogged Soaking recipes can be made in the Drying Table."
+		}
+	]
+}

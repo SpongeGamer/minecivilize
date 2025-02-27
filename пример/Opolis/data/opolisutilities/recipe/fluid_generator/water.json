@@ -1,0 +1,7 @@
+{
+  "type": "opolisutilities:fluid_generator",
+  "fluid": {
+    "amount": 100,
+    "id": "minecraft:water"
+  }
+}

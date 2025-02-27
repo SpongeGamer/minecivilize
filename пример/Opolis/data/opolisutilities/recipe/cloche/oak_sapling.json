@@ -1,0 +1,25 @@
+{
+  "type": "opolisutilities:cloche",
+  "catalyst": [],
+  "chanceOutput1": {
+    "count": 1,
+    "id": "minecraft:oak_sapling"
+  },
+  "chanceOutput2": {
+    "count": 1,
+    "id": "minecraft:apple"
+  },
+  "chanceOutputChance1": 0.15,
+  "chanceOutputChance2": 0.05,
+  "durationModifier": 2.0,
+  "mainOutput": {
+    "count": 2,
+    "id": "minecraft:oak_log"
+  },
+  "seed": {
+    "item": "minecraft:oak_sapling"
+  },
+  "soil": {
+    "tag": "minecraft:dirt"
+  }
+}

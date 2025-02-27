@@ -1,0 +1,26 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "opolisutilities:block/crafter_vertical",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "opolisutilities:block/crafter",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "opolisutilities:block/crafter"
+    },
+    "facing=south": {
+      "model": "opolisutilities:block/crafter",
+      "y": 180
+    },
+    "facing=up": {
+      "model": "opolisutilities:block/crafter_vertical"
+    },
+    "facing=west": {
+      "model": "opolisutilities:block/crafter",
+      "y": 270
+    }
+  }
+}

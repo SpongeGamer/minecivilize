@@ -1,0 +1,15 @@
+{
+  "type": "opolisutilities:cloche",
+  "catalyst": [],
+  "durationModifier": 3.0,
+  "mainOutput": {
+    "count": 1,
+    "id": "minecraft:red_mushroom"
+  },
+  "seed": {
+    "item": "minecraft:red_mushroom"
+  },
+  "soil": {
+    "tag": "minecraft:dirt"
+  }
+}

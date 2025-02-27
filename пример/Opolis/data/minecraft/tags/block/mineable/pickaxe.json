@@ -1,0 +1,17 @@
+{
+  "values": [
+    "opolisutilities:ender_ore",
+    "opolisutilities:deepslate_ender_ore",
+    "opolisutilities:summoning_block",
+    "opolisutilities:resource_generator",
+    "opolisutilities:redstone_clock",
+    "opolisutilities:fluid_generator",
+    "opolisutilities:ender_scrambler",
+    "opolisutilities:block_placer",
+    "opolisutilities:block_breaker",
+    "opolisutilities:item_repairer",
+    "opolisutilities:crafter",
+    "opolisutilities:catalogue",
+    "opolisutilities:cloche"
+  ]
+}

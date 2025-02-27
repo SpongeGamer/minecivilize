@@ -1,0 +1,20 @@
+{
+  "type": "opolisutilities:cloche",
+  "catalyst": [],
+  "chanceOutput1": {
+    "count": 1,
+    "id": "minecraft:melon_seeds"
+  },
+  "chanceOutputChance1": 0.15,
+  "durationModifier": 3.0,
+  "mainOutput": {
+    "count": 1,
+    "id": "minecraft:melon"
+  },
+  "seed": {
+    "item": "minecraft:melon_seeds"
+  },
+  "soil": {
+    "tag": "minecraft:dirt"
+  }
+}

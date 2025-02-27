@@ -1,0 +1,41 @@
+{
+  "description": {
+    "translate": "enchantment.opolisutilities.wardens_smite"
+  },
+  "supported_items": "#minecraft:enchantable/sharp_weapon",
+  "weight": 12,
+  "max_level": 5,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 11
+  },
+  "max_cost": {
+    "base": 21,
+    "per_level_above_first": 11
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:damage": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 100,
+            "per_level_above_first": 100
+          }
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "minecraft:warden"
+          }
+        }
+      }
+    ]
+  }
+}

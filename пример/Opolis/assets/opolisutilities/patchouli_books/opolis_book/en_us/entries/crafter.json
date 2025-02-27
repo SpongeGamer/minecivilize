@@ -1,0 +1,18 @@
+{
+	"name": "Crafter",
+	"icon": "opolisutilities:crafter",
+	"category": "opolisutilities:advanced_items",
+	"sortnum": 10,
+	"pages": [
+		{
+    		"type": "spotlight",
+    		"item": "opolisutilities:crafter",
+    		"text": "Can be used to auto craft items!, requires a minimum of 2 items per input slot to start crafting!.$(br2)Only works with input items that are stackable.$(br2)Use the wrench to turn on!"
+    	},
+		{
+			"type": "crafting",
+			"recipe": "opolisutilities:crafter",
+			"text": "Accepts items from any side and top, outputs from the bottom.$(br2)The wrench can be used to speed up and slow down the crafter!"
+		}
+	]
+}

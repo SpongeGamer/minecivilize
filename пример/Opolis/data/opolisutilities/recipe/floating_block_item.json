@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "opolisutilities",
+  "key": {
+    "F": {
+      "tag": "c:feathers"
+    },
+    "W": {
+      "tag": "minecraft:wool"
+    }
+  },
+  "pattern": [
+    " F ",
+    "FWF",
+    " F "
+  ],
+  "result": {
+    "count": 1,
+    "id": "opolisutilities:floating_block_item"
+  }
+}

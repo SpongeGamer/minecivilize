@@ -1,0 +1,11 @@
+{
+  "type": "opolisutilities:summoning_block",
+  "catalyst": {
+    "item": "minecraft:water_bucket"
+  },
+  "input": {
+    "count": 1,
+    "item": "minecraft:ink_sac"
+  },
+  "mob": "minecraft:squid"
+}

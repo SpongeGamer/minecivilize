@@ -1,0 +1,12 @@
+{
+	"name": "Death Stone",
+	"icon": "opolisutilities:textures/item/death_stone.png",
+	"category": "opolisutilities:home_stones",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "text",
+			"text": "A Death Stone is given after you die to return to your last death point, works across all dimensions."
+		}
+	]
+}

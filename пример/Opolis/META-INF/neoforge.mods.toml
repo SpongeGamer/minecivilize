@@ -1,0 +1,36 @@
+modLoader="javafml" #mandatory
+loaderVersion="[4,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="All Rights Reserved"
+[[mods]] #mandatory
+modId="opolisutilities" #mandatory
+version="4.11.8"
+displayName="Opolis Utils" #mandatory
+authors="benbenlaw" #optional
+logoFile="logo.png" #optional
+description='''A bunch of useful things for BBL modpacks and other modpacks.'''
+
+[[mixins]]
+config="opolisutilities.mixins.json"
+
+[[dependencies."opolisutilities"]] #optional
+# the modid of the dependency
+modId="neoforge" #mandatory
+type="required" #mandatory
+versionRange="[21.1.0,)" #mandatory
+ordering="NONE"
+side="BOTH"
+
+[[dependencies."opolisutilities"]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1, 1.22)"
+ordering="NONE"
+side="BOTH"
+
+
+[[dependencies."opolisutilities"]]
+modId="jei"
+type="optional"
+versionRange="jei-1.21-neoforge-19.8.0.97"
+ordering="NONE"
+side="BOTH"

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "opolisutilities",
+  "key": {
+    "A": {
+      "tag": "c:ingots/iron"
+    },
+    "E": {
+      "item": "minecraft:ender_pearl"
+    },
+    "S": {
+      "tag": "c:stones"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "EAE",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "opolisutilities:ender_scrambler"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "opolisutilities:cloche",
+  "catalyst": [],
+  "chanceOutput1": {
+    "count": 1,
+    "id": "minecraft:poisonous_potato"
+  },
+  "chanceOutputChance1": 0.01,
+  "durationModifier": 1.8,
+  "mainOutput": {
+    "count": 1,
+    "id": "minecraft:potato"
+  },
+  "seed": {
+    "item": "minecraft:potato"
+  },
+  "soil": {
+    "tag": "minecraft:dirt"
+  }
+}

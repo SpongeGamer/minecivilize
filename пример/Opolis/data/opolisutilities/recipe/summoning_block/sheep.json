@@ -1,0 +1,11 @@
+{
+  "type": "opolisutilities:summoning_block",
+  "catalyst": {
+    "tag": "minecraft:dirt"
+  },
+  "input": {
+    "count": 1,
+    "tag": "minecraft:wool"
+  },
+  "mob": "minecraft:sheep"
+}

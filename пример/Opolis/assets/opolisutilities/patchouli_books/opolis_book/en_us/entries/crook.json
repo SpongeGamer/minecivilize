@@ -1,0 +1,17 @@
+{
+	"name": "Crook",
+	"icon": "opolisutilities:textures/item/crook.png",
+	"category": "opolisutilities:basic_items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "text",
+			"text": "A crook can be used to increase the drops from leaves.$(br2)Also make leaves break instantly.$(br2)Sheep will also follow the player when they hold this item.$(br2)Number of roles can be adjusted in the config file."
+		},
+		{
+        	"type": "crafting",
+        	"recipe": "opolisutilities:crook",
+        	"text": "Smashing those leaves."
+        }
+	]
+}

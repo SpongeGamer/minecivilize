@@ -1,0 +1,12 @@
+{
+	"name": "Opolis Wrench",
+	"icon": "opolisutilities:textures/item/opolis_wrench.png",
+	"category": "opolisutilities:basic_items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "text",
+			"text": "Just a Wrench that allows you to see additional information in world when being held."
+		}
+	]
+}

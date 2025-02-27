@@ -1,0 +1,10 @@
+// 1.21	2024-09-29T17:35:15.4611089	opolisutilities Item Tags
+aa506fac3c8cecad7354c90d482755034f296a07 data/c/tags/item/nuggets.json
+aa506fac3c8cecad7354c90d482755034f296a07 data/c/tags/item/nuggets/copper.json
+49a3a75f78714273f04a2c47b9be7ce3bc184d61 data/c/tags/item/ores.json
+49a3a75f78714273f04a2c47b9be7ce3bc184d61 data/c/tags/item/ores/ender_ore.json
+f0b54ce3b5a161aff05a1ab2e79e6e1c3edf523a data/c/tags/item/strings.json
+e2d1b98f488ceab539404aa58ddf7d93a0fe2505 data/c/tags/item/tools/shear.json
+807a6593eb5f5dad64272e34a583d39247ab06f6 data/minecraft/tags/item/enchantable/durability.json
+33ded67d2c6aa30d1d3fa7232a3a3fa3ca2a7f8a data/opolisutilities/tags/item/banned_in_block_placer.json
+2ebc817b7f61aeeb885f4d7afb12ee80152bb798 data/opolisutilities/tags/item/banned_in_item_repairer.json

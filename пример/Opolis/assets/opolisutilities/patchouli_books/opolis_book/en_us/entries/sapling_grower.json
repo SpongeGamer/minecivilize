@@ -1,0 +1,18 @@
+{
+	"name": "Sapling Grower",
+	"icon": "opolisutilities:textures/item/sapling_grower.png",
+	"category": "opolisutilities:basic_items",
+	"sortnum": 4,
+	"pages": [
+		{
+    		"type": "spotlight",
+    		"item": "opolisutilities:sapling_grower",
+    		"text": "Can be used to grow saplings in the world!"
+    	},
+		{
+			"type": "crafting",
+			"recipe": "opolisutilities:sapling_grower",
+			"text": "Works just as using bone meal would."
+		}
+	]
+}

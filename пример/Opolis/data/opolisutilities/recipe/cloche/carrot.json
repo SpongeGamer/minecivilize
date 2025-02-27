@@ -1,0 +1,15 @@
+{
+  "type": "opolisutilities:cloche",
+  "catalyst": [],
+  "durationModifier": 1.8,
+  "mainOutput": {
+    "count": 1,
+    "id": "minecraft:carrot"
+  },
+  "seed": {
+    "item": "minecraft:carrot"
+  },
+  "soil": {
+    "tag": "minecraft:dirt"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "opolisutilities:cloche",
+  "catalyst": [],
+  "chanceOutput1": {
+    "count": 1,
+    "id": "minecraft:pumpkin_seeds"
+  },
+  "chanceOutputChance1": 0.15,
+  "durationModifier": 3.0,
+  "mainOutput": {
+    "count": 1,
+    "id": "minecraft:pumpkin"
+  },
+  "seed": {
+    "item": "minecraft:pumpkin_seeds"
+  },
+  "soil": {
+    "tag": "minecraft:dirt"
+  }
+}

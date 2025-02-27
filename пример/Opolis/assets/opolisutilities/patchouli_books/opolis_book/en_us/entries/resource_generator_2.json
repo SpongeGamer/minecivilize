@@ -1,0 +1,52 @@
+{
+	"name": "Resource Generator 2",
+	"icon": "opolisutilities:resource_generator_2",
+	"category": "opolisutilities:advanced_items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "text",
+			"text": "The resource generator 2 is a block that will duplicate items like cobblestone and stone.$(br2)Any block that can store items can be placed underneath the resource generator 2 including hoppers and chests.$(br2)When working the resource generator 2 will turn blue and start to provide items to the inventory below."
+		},
+		{
+        	"type": "multiblock",
+        	"multiblock": {
+        		"pattern": [
+        			["S"],
+        			["R"],
+        			["0"],
+        			[" "]
+        		],
+        		"mapping": {
+        			"S": "minecraft:cobblestone",
+        			"R": "opolisutilities:resource_generator_2",
+        			"0": "#forge:chests"
+        		}
+        	},
+        	"text": "Basic Resource Generator 2 setup. Produces one item every 11 seconds."
+        },
+		{
+        	"type": "multiblock",
+        	"multiblock": {
+        		"pattern": [
+        		    ["B"],
+        			["S"],
+        			["R"],
+        			["0"],
+        			[" "]
+        		],
+        		"mapping": {
+        		    "B": "minecraft:gold_block",
+        			"S": "minecraft:cobblestone",
+        			"R": "opolisutilities:resource_generator_2",
+        			"0": "#forge:chests"
+        		}
+        	},
+        	"text": "Speed blocks can be placed on top to increase the speed blocks are produced."
+        },
+        {
+        	"type": "text",
+        	"text": "Pressing U on the resource generator 2 will show all blocks that it can mine as well as any blocks that can effect the speed it produces resources."
+        }
+	]
+}

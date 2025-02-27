@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:tag_empty",
+        "tag": "c:storage_blocks/electrum"
+      }
+    }
+  ],
+  "type": "opolisutilities:speed_upgrades",
+  "input": {
+    "tag": "c:storage_blocks/electrum"
+  },
+  "tickRate": 115
+}

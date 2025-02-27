@@ -1,0 +1,7 @@
+// 1.21	2024-08-18T19:51:24.766788	opolisutilities Block Tags
+49a3a75f78714273f04a2c47b9be7ce3bc184d61 data/c/tags/block/ores.json
+49a3a75f78714273f04a2c47b9be7ce3bc184d61 data/c/tags/block/ores/ender_ore.json
+cd8bff4f1b87e1fa189c987a3d46e8491230c04e data/minecraft/tags/block/mineable/axe.json
+ba83f4f6c2933e1f768d611563c784d8f3523439 data/minecraft/tags/block/mineable/pickaxe.json
+49a3a75f78714273f04a2c47b9be7ce3bc184d61 data/minecraft/tags/block/needs_iron_tool.json
+d69997a1f00957f15f8f4cc638bee90336e63587 data/opolisutilities/tags/block/banned_in_block_placer.json

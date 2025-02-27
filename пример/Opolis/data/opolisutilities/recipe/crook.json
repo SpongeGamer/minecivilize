@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "opolisutilities",
+  "key": {
+    "S": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    " SS",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "opolisutilities:crook"
+  }
+}

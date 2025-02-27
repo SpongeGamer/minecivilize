@@ -1,0 +1,17 @@
+{
+	"name": "Ender Scrambler",
+	"icon": "opolisutilities:ender_scrambler",
+	"category": "opolisutilities:advanced_items",
+	"sortnum":  7,
+	"pages": [
+		{
+			"type": "text",
+			"text": "The Ender Scrambler when placed in the world will prevent Enderman from teleporting.$(br2)The Scrambler is controlled with the Opolis Wrench!"
+		},
+		{
+			"type": "crafting",
+			"recipe": "opolisutilities:ender_scrambler",
+			"text": "Used to prevent ender man from teleporting."
+		}
+	]
+}

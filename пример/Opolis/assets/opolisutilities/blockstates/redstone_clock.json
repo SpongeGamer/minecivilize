@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "opolisutilities:block/redstone_clock_off"
+    },
+    "powered=true": {
+       "model": "opolisutilities:block/redstone_clock_on"
+    }
+  }
+}

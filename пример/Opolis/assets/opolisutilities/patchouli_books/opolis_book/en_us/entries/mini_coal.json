@@ -1,0 +1,17 @@
+{
+	"name": "Mini Coal",
+	"icon": "opolisutilities:textures/item/mini_coal.png",
+	"category": "opolisutilities:basic_items",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "text",
+			"text": "Mini coal can be used to smelt one item in a furnace."
+		},
+		{
+			"type": "crafting",
+			"recipe": "opolisutilities:mini_coal",
+			"text": "Used to smelt one item."
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+  "type": "opolisutilities:speed_upgrades",
+  "input": {
+    "item": "minecraft:nether_star"
+  },
+  "tickRate": 30
+}

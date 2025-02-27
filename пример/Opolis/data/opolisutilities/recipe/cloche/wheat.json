@@ -1,0 +1,20 @@
+{
+  "type": "opolisutilities:cloche",
+  "catalyst": [],
+  "chanceOutput1": {
+    "count": 1,
+    "id": "minecraft:wheat_seeds"
+  },
+  "chanceOutputChance1": 0.15,
+  "durationModifier": 1.8,
+  "mainOutput": {
+    "count": 1,
+    "id": "minecraft:wheat"
+  },
+  "seed": {
+    "item": "minecraft:wheat_seeds"
+  },
+  "soil": {
+    "tag": "minecraft:dirt"
+  }
+}

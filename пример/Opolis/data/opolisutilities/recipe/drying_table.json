@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "opolisutilities",
+  "key": {
+    "L": {
+      "tag": "minecraft:logs"
+    },
+    "S": {
+      "tag": "c:strings"
+    }
+  },
+  "pattern": [
+    "LSL",
+    "LSL",
+    "L L"
+  ],
+  "result": {
+    "count": 1,
+    "id": "opolisutilities:drying_table"
+  }
+}

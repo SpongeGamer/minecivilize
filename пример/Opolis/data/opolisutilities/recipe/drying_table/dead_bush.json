@@ -1,0 +1,12 @@
+{
+  "type": "opolisutilities:drying_table",
+  "duration": 100,
+  "input": {
+    "count": 1,
+    "tag": "minecraft:saplings"
+  },
+  "output": {
+    "count": 1,
+    "id": "minecraft:dead_bush"
+  }
+}

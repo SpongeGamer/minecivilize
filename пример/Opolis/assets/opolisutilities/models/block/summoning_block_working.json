@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "opolisutilities:block/summoning_block_front",
+    "side": "opolisutilities:block/machine_side_working",
+    "top": "opolisutilities:block/summoning_block_top"
+  }
+}

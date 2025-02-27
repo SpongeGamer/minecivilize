@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "opolisutilities:block/ender_scrambler"
+    },
+    "powered=true": {
+       "model": "opolisutilities:block/ender_scrambler_working"
+    }
+  }
+}

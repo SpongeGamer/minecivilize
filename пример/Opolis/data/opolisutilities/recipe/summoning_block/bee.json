@@ -1,0 +1,11 @@
+{
+  "type": "opolisutilities:summoning_block",
+  "catalyst": {
+    "item": "minecraft:beehive"
+  },
+  "input": {
+    "count": 1,
+    "tag": "minecraft:small_flowers"
+  },
+  "mob": "minecraft:bee"
+}

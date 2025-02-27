@@ -1,0 +1,11 @@
+{
+  "type": "opolisutilities:summoning_block",
+  "catalyst": {
+    "item": "minecraft:jungle_leaves"
+  },
+  "input": {
+    "count": 1,
+    "item": "minecraft:cocoa_beans"
+  },
+  "mob": "minecraft:parrot"
+}

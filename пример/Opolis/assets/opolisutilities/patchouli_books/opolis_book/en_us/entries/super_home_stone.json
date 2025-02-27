@@ -1,0 +1,12 @@
+{
+	"name": "Super Home Stone",
+	"icon": "opolisutilities:textures/item/super_home_stone.png",
+	"category": "opolisutilities:home_stones",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "text",
+			"text": "A Super Home Stone can be used to teleport back to a previously saved location, works across all dimensions."
+		}
+	]
+}

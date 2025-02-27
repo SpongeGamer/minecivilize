@@ -1,0 +1,12 @@
+{
+	"name": "Advanced Home Stone",
+	"icon": "opolisutilities:textures/item/advanced_home_stone.png",
+	"category": "opolisutilities:home_stones",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "text",
+			"text": "A Advanced Home Stone can be used to teleport back to a previously saved location, only works in the overworld, the nether and the end."
+		}
+	]
+}

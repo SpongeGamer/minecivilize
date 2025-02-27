@@ -1,0 +1,7 @@
+{
+  "type": "opolisutilities:speed_upgrades",
+  "input": {
+    "tag": "c:storage_blocks/coal"
+  },
+  "tickRate": 200
+}
