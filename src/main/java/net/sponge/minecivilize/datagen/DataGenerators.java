@@ -17,10 +17,15 @@ import net.neoforged.neoforge.common.data.DatapackBuiltinEntriesProvider;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
+import net.minecraft.data.loot.LootTableSubProvider;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.resources.ResourceKey;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.CompletableFuture;
+import java.util.function.Function;
 
 @EventBusSubscriber(modid = MinecivilizeMod.MODID, bus = EventBusSubscriber.Bus.MOD)
 public class DataGenerators {
@@ -37,8 +42,9 @@ public class DataGenerators {
         ModBlockTagsProvider blockTagsProvider = new ModBlockTagsProvider(packOutput, lookupProvider, existingFileHelper);
         generator.addProvider(event.includeServer(), blockTagsProvider);
         
-        generator.addProvider(event.includeServer(), new LootTableProvider(packOutput, Collections.emptySet(),
-                List.of(new LootTableProvider.SubProviderEntry(() -> new ModBlockLootTableProvider(lookupProvider.get()), LootContextParamSets.BLOCK)),
-                lookupProvider));
+        Function<HolderLookup.Provider, LootTableSubProvider> subProvider = provider -> new ModBlockLootTableProvider(provider);
+        Set<ResourceKey<LootTable>> emptySet = Collections.emptySet();
+        generator.addProvider(event.includeServer(), new LootTableProvider(packOutput, emptySet,
+                List.of(new LootTableProvider.SubProviderEntry(subProvider, LootContextParamSets.BLOCK)), lookupProvider));
     }
 }

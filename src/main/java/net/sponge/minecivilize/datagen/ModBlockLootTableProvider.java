@@ -11,6 +11,7 @@ import net.sponge.minecivilize.worldgen.ModPlacedFeatures;
 
 import java.util.Collections;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class ModBlockLootTableProvider extends BlockLootSubProvider {
     public ModBlockLootTableProvider(net.minecraft.core.HolderLookup.Provider provider) {
@@ -26,6 +27,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
-        return MinecivilizeModBlocks.BLOCKS.getEntries().stream().map(deferred -> deferred.get().get())::iterator;
+        return MinecivilizeModBlocks.BLOCKS.getEntries().stream()
+                .map(entry -> entry.get())
+                .collect(Collectors.toList());
     }
 }
