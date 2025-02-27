@@ -1,6 +1,5 @@
 package net.sponge.minecivilize.datagen;
 
-import net.sponge.minecivilize.MinecivilizeMod;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -10,6 +9,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
+import net.sponge.minecivilize.MinecivilizeMod;
 import net.sponge.minecivilize.worldgen.ModBiomeModifiers;
 import net.sponge.minecivilize.worldgen.ModConfiguredFeatures;
 import net.sponge.minecivilize.worldgen.ModPlacedFeatures;
@@ -38,7 +38,7 @@ public class DataGenerators {
         generator.addProvider(event.includeServer(), blockTagsProvider);
         
         generator.addProvider(event.includeServer(), new LootTableProvider(packOutput, Collections.emptySet(),
-                List.of(new LootTableProvider.SubProviderEntry(ModBlockLootTableProvider::new, LootContextParamSets.BLOCK)),
+                List.of(new LootTableProvider.SubProviderEntry(() -> new ModBlockLootTableProvider(lookupProvider.get()), LootContextParamSets.BLOCK)),
                 lookupProvider));
     }
-} 
+}

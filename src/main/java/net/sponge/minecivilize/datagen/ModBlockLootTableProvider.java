@@ -1,57 +1,31 @@
 package net.sponge.minecivilize.datagen;
 
-import net.minecraft.core.Holder;
-import net.minecraft.core.HolderLookup;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.enchantment.Enchantment;
-import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.storage.loot.LootTable;
-import net.minecraft.world.level.storage.loot.entries.LootItem;
-import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
-import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
-import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
+import net.neoforged.neoforge.common.data.BlockTagsProvider;
+import net.neoforged.neoforge.data.event.GatherDataEvent;
+import net.neoforged.neoforge.registries.DeferredBlock;
 import net.sponge.minecivilize.init.MinecivilizeModBlocks;
-import net.sponge.minecivilize.init.MinecivilizeModItems;
+import net.sponge.minecivilize.worldgen.ModPlacedFeatures;
 
+import java.util.Collections;
 import java.util.Set;
 
 public class ModBlockLootTableProvider extends BlockLootSubProvider {
-    protected ModBlockLootTableProvider(HolderLookup.Provider registries) {
-        super(Set.of(), FeatureFlags.REGISTRY.allFlags(), registries);
+    public ModBlockLootTableProvider(net.minecraft.core.HolderLookup.Provider provider) {
+        super(Collections.emptySet(), FeatureFlags.REGISTRY.allFlags(), provider);
     }
 
     @Override
     protected void generate() {
-        // Руды дропают сырое олово
-        add(MinecivilizeModBlocks.TIN_ORE.get(),
-                block -> createMultipleOreDrops(MinecivilizeModBlocks.TIN_ORE.get(), MinecivilizeModItems.RAW_TIN.get(), 1, 3));
-        add(MinecivilizeModBlocks.DEEPSLATE_TIN_ORE.get(),
-                block -> createMultipleOreDrops(MinecivilizeModBlocks.DEEPSLATE_TIN_ORE.get(), MinecivilizeModItems.RAW_TIN.get(), 2, 5));
-
-        // Столы просто дропают себя
-        dropSelf(MinecivilizeModBlocks.ROME_TABLE_BLOCK.get());
-        dropSelf(MinecivilizeModBlocks.GERMANY_TABLE_BLOCK.get());
-        dropSelf(MinecivilizeModBlocks.RUSSIAN_TABLE_BLOCK.get());
-    }
-
-    protected LootTable.Builder createMultipleOreDrops(Block block, Item item, float minDrops, float maxDrops) {
-        HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
-        return this.createSilkTouchDispatchTable(block,
-                this.applyExplosionDecay(block, LootItem.lootTableItem(item)
-                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(minDrops, maxDrops)))
-                        .apply(ApplyBonusCount.addOreBonusCount(registrylookup.getOrThrow(Enchantments.FORTUNE)))));
+        // Не добавляй здесь дроп для tin_ore и deepslate_tin_ore, если у них есть JSON
+        // Пример для других блоков, если нужно:
+        // dropSelf(MinecivilizeModBlocks.OTHER_BLOCK.get());
     }
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
-        return MinecivilizeModBlocks.BLOCKS.getEntries().stream().map(Holder::value)::iterator;
+        return MinecivilizeModBlocks.BLOCKS.getEntries().stream().map(deferred -> deferred.get().get())::iterator;
     }
-
-    public static ModBlockLootTableProvider create(HolderLookup.Provider lookupProvider) {
-        return new ModBlockLootTableProvider(lookupProvider);
-    }
-} 
+}
