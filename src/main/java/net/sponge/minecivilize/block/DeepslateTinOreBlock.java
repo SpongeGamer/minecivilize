@@ -1,25 +1,27 @@
 package net.sponge.minecivilize.block;
 
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.MapColor;
-import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.core.BlockPos;
-import net.minecraft.world.level.Level;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.enchantment.Enchantments;
-import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.block.SoundType;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-public class DeepslateTinOreBlock extends Block {
+import javax.annotation.Nullable;
+
+public class DeepslateTinOreBlock extends DropExperienceBlock {
     private static final Logger LOGGER = LogManager.getLogger();
 
     public DeepslateTinOreBlock() {
-        super(BlockBehaviour.Properties.of()
+        super(UniformInt.of(3, 6), BlockBehaviour.Properties.of()
             .mapColor(MapColor.DEEPSLATE)
             .requiresCorrectToolForDrops()
             .strength(4.5f)
@@ -27,14 +29,12 @@ public class DeepslateTinOreBlock extends Block {
     }
 
     @Override
-    public void playerDestroy(Level level, Player player, BlockPos pos, BlockState state, 
-                            net.minecraft.world.level.block.entity.BlockEntity blockEntity, ItemStack tool) {
-        LOGGER.info("DeepslateTinOre destroyed at " + pos);
-        LOGGER.info("Tool used: " + tool);
-        LOGGER.info("Tool tier: " + tool.getTier());
-        LOGGER.info("Has Silk Touch: " + EnchantmentHelper.hasSilkTouch(tool));
-        LOGGER.info("Fortune level: " + EnchantmentHelper.getItemEnchantmentLevel(Enchantments.FORTUNE, tool));
-        
+    public void playerDestroy(Level level, Player player, net.minecraft.core.BlockPos pos, net.minecraft.world.level.block.state.BlockState state, @Nullable BlockEntity blockEntity, ItemStack tool) {
+        LOGGER.info("Tool tier: " + tool.getItem().getTier(level.registryAccess()));
+        LOGGER.info("Has Silk Touch: " + (EnchantmentHelper.getEnchantmentLevel(
+            level.registryAccess().registryOrThrow(Registries.ENCHANTMENT).getHolderOrThrow(Enchantments.SILK_TOUCH), tool) > 0));
+        LOGGER.info("Fortune level: " + EnchantmentHelper.getEnchantmentLevel(
+            level.registryAccess().registryOrThrow(Registries.ENCHANTMENT).getHolderOrThrow(Enchantments.FORTUNE), tool));
         super.playerDestroy(level, player, pos, state, blockEntity, tool);
     }
-} 
+}
