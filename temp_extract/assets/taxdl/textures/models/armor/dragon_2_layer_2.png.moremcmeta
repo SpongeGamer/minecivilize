@@ -1,0 +1,7 @@
+{
+    "overlay": {
+        "texture": "taxdl:textures/models/armor/dragon__layer_2_overlay.png",
+        "emissive": true,
+		"transparency": "translucent"
+    }
+}

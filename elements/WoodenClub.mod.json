@@ -1,0 +1,35 @@
+{
+  "_fv": 73,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Special",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "7162be51b298971eb5af72d54c551b249392e35af55c96c66f77bb86c6e97158",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Деревянная дубинка",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:MineCivilize"
+      }
+    ],
+    "efficiency": 5.0,
+    "attackSpeed": 0.7,
+    "enchantability": 2,
+    "damageVsEntity": 7.0,
+    "usageCount": 160,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "blockDropsTier": "WOOD",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": true
+  }
+}

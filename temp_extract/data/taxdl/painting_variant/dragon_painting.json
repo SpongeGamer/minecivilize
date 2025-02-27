@@ -1,0 +1,11 @@
+{
+  "asset_id": "taxdl:dragon_painting",
+  "height": 4,
+  "width": 4,
+  "title": {
+    "translate": "painting.taxdl.dragon_painting.title"
+  },
+  "author": {
+    "translate": "painting.taxdl.dragon_painting.author"
+  }
+}

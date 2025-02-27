@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aaa"
+  ],
+  "key": {
+    "a": "minecraft:diamond",
+    "b": "taxdl:dragon_upgrade_1_smithing_table",
+    "c": "minecraft:obsidian"
+  },
+  "result": {
+    "id": "taxdl:dragon_upgrade_1_smithing_table",
+    "count": 2
+  }
+}

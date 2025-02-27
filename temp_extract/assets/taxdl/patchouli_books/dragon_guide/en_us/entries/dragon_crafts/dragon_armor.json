@@ -1,0 +1,25 @@
+{
+  "name": "Dragon Armor",
+  "icon": "taxdl:dragon_armor_helmet",
+  "category": "taxdl:dragon_crafts",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "taxdl:dragon_armor_helmet,taxdl:dragon_armor_chestplate,taxdl:dragon_armor_leggings,taxdl:dragon_armor_boots",
+      "title": "Dragon Armor",
+	  "text": "The Dragon Armor is a varying protection from damage. Helmet, chestplate, legging, and boot, which can be placed in armor slots for use. It is crafted in use of he Dragon Scale."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "taxdl:recipe_dragon_helmet",
+      "recipe2": "taxdl:recipe_dragon_chestplate"
+    },
+	{
+	
+      "type": "patchouli:crafting",
+      "recipe": "taxdl:recipe_dragon_leggings",
+      "recipe2": "taxdl:recipe_dragon_boots"
+    }
+  ]
+}

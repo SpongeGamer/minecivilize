@@ -1,0 +1,26 @@
+{
+  "name": "Dragon Items",
+  "icon": "taxdl:dragon_disc",
+  "category": "taxdl:dragon_crafts",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "taxdl:dragon_scale",
+      "title": "Dragon Scale",
+	  "text": "The Dragon Scale is the primier item to craft the Dragon Tools and the Dragon Armor. It is dropped by the Dragon"
+    },
+	{
+      "type": "patchouli:smelting",
+      "recipe": "taxdl:recipe_dragon_steak",
+	  "title": "Dragon Steak",
+	  "text": "The Dragon Steak is a consumable meat.  The Dragon Flesh is dropped by the Dragon. Nutrition: 4, Saturation: 0.3. A cooked steak has higher values. Nutrition: 10, Saturation: 0.3."
+    },
+	{
+      "type": "patchouli:spotlight",
+      "item": "taxdl:dragon_disc",
+      "title": "Dragon Scale",
+	  "text": "The Dragon Disc is a record item droped rarely by the Dragon. It contains a special composition."
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+// 1.21	2024-07-07T11:31:07.584621	Tags for minecraft:block mod id tutorialmod
+0f528e4876e4d3bb8df84d2a1006cf71e2c150fc data/minecraft/tags/block/mineable/pickaxe.json
+0f528e4876e4d3bb8df84d2a1006cf71e2c150fc data/minecraft/tags/block/needs_iron_tool.json
+c83f9edda4547a4af3f0016fda0c2621839849b3 data/tutorialmod/tags/block/example_block.json
+da2ee27128dcabd679c7a80668a17537bbce2482 data/tutorialmod/tags/block/ores/deepslate_example_ore.json
+c87ceab65e9fee9e7098e332e5c7bcbd3bfe6e86 data/tutorialmod/tags/block/ores/example_ore.json

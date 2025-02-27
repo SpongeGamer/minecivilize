@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "denseores:block/dense_lapis_ore"
+    }
+  }
+}

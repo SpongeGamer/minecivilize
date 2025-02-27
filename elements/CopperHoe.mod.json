@@ -1,0 +1,25 @@
+{
+  "mod_elements": [],
+  "name": "CopperHoe",
+  "type": "item",
+  "sortid": 10,
+  "compiles": true,
+  "locked_code": false,
+  "registry_name": "copper_hoe",
+  "metadata": {
+    "files": [
+      "src/main/java/net/sponge/minecivilize/item/CopperHoeItem.java",
+      "src/main/resources/assets/minecivilize/models/item/copper_hoe.json"
+    ],
+    "textures": [
+      "src/main/resources/assets/minecivilize/textures/item/copper_hoe.png"
+    ]
+  },
+  "path": "~/Items/Resources",
+  "properties": {
+    "max_stack_size": 1,
+    "fire_resistant": false,
+    "creative_tab": "mine_civilize",
+    "enchantability": 10
+  }
+} 

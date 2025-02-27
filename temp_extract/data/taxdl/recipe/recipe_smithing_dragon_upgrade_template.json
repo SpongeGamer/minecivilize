@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": "#forge:gems/dragon_scale",
+    "b": "taxdl:dragon_upgrade_1_smithing_table"
+  },
+  "result": {
+    "id": "taxdl:dragon_upgrade_2_smithing_table",
+    "count": 1
+  }
+}

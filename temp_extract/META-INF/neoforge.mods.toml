@@ -1,0 +1,36 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="taxdl"
+version="3.0.1"
+displayName="Tax' Dragon Legend"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/taxdragonlegend"
+logoFile="logo.png"
+credits="Written by Taknax"
+authors="Taknax"
+description="Tax' Dragon Legend is a Minecraft Forge modification aims to add Dragon related end game equipment."
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.taxdl]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.4.78-beta,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.taxdl]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.4]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

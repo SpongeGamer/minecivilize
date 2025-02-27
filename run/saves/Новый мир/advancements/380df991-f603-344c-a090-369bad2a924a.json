@@ -1,0 +1,189 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-02-27 12:46:42 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:forest": "2025-02-27 12:46:43 +0300"
+    },
+    "done": false
+  },
+  "minecraft:recipes/decorations/torch": {
+    "criteria": {
+      "has_stone_pickaxe": "2025-02-27 12:47:34 +0300"
+    },
+    "done": true
+  },
+  "minecraft:story/upgrade_tools": {
+    "criteria": {
+      "stone_pickaxe": "2025-02-27 12:47:34 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_smelting": {
+    "criteria": {
+      "has_iron_pickaxe": "2025-02-27 12:47:35 +0300"
+    },
+    "done": true
+  },
+  "minecraft:story/iron_tools": {
+    "criteria": {
+      "iron_pickaxe": "2025-02-27 12:47:35 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_blasting": {
+    "criteria": {
+      "has_iron_pickaxe": "2025-02-27 12:47:35 +0300"
+    },
+    "done": true
+  },
+  "denseores:recipes/misc/coal_from_blasting_dense_coal_ore": {
+    "criteria": {
+      "has_dense_coal_ore": "2025-02-27 12:48:43 +0300"
+    },
+    "done": true
+  },
+  "denseores:recipes/misc/coal_from_smelting_dense_coal_ore": {
+    "criteria": {
+      "has_dense_coal_ore": "2025-02-27 12:48:43 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2025-02-27 12:48:43 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/campfire": {
+    "criteria": {
+      "has_coal": "2025-02-27 12:48:46 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/coal_block": {
+    "criteria": {
+      "has_coal": "2025-02-27 12:48:46 +0300"
+    },
+    "done": true
+  },
+  "denseores:recipes/misc/diamond_from_blasting_dense_deepslate_diamond_ore": {
+    "criteria": {
+      "has_dense_deepslate_diamond_ore": "2025-02-27 12:48:53 +0300"
+    },
+    "done": true
+  },
+  "denseores:recipes/misc/diamond_from_smelting_dense_deepslate_diamond_ore": {
+    "criteria": {
+      "has_dense_deepslate_diamond_ore": "2025-02-27 12:48:53 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_leggings": {
+    "criteria": {
+      "has_diamond": "2025-02-27 12:49:01 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_sword": {
+    "criteria": {
+      "has_diamond": "2025-02-27 12:49:01 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/jukebox": {
+    "criteria": {
+      "has_diamond": "2025-02-27 12:49:01 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_chestplate": {
+    "criteria": {
+      "has_diamond": "2025-02-27 12:49:01 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_helmet": {
+    "criteria": {
+      "has_diamond": "2025-02-27 12:49:01 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_pickaxe": {
+    "criteria": {
+      "has_diamond": "2025-02-27 12:49:01 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/diamond_block": {
+    "criteria": {
+      "has_diamond": "2025-02-27 12:49:01 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_hoe": {
+    "criteria": {
+      "has_diamond": "2025-02-27 12:49:01 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_shovel": {
+    "criteria": {
+      "has_diamond": "2025-02-27 12:49:01 +0300"
+    },
+    "done": true
+  },
+  "minecraft:story/mine_diamond": {
+    "criteria": {
+      "diamond": "2025-02-27 12:49:01 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_axe": {
+    "criteria": {
+      "has_diamond": "2025-02-27 12:49:01 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_boots": {
+    "criteria": {
+      "has_diamond": "2025-02-27 12:49:01 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/copper_ingot_from_blasting_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2025-02-27 13:48:19 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/raw_copper_block": {
+    "criteria": {
+      "has_raw_copper": "2025-02-27 13:48:19 +0300"
+    },
+    "done": true
+  },
+  "denseores:recipes/misc/copper_ingot_from_smelting_dense_copper_ore": {
+    "criteria": {
+      "has_dense_copper_ore": "2025-02-27 13:48:13 +0300"
+    },
+    "done": true
+  },
+  "denseores:recipes/misc/copper_ingot_from_blasting_dense_copper_ore": {
+    "criteria": {
+      "has_dense_copper_ore": "2025-02-27 13:48:13 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/copper_ingot_from_smelting_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2025-02-27 13:48:19 +0300"
+    },
+    "done": true
+  },
+  "DataVersion": 3955
+}

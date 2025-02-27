@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ccc",
+    "ctc",
+    "ccc"
+  ],
+  "key": {
+    "c": {
+      "item": "minecraft:copper_ingot"
+    },
+    "t": {
+      "item": "minecivilize:tin_ingot"
+    }
+  },
+  "result": {
+    "id": "minecivilize:bronze_ingot",
+    "count": 9
+  }
+} 

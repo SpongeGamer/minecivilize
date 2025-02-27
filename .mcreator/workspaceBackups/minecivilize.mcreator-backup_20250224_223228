@@ -1,0 +1,1288 @@
+{
+  "mod_elements": [
+    {
+      "name": "BookOfCiv",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "book_of_civ",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/network/BookOfCivButtonMessage.java",
+          "src/main/java/net/sponge/minecivilize/client/gui/BookOfCivScreen.java",
+          "src/main/java/net/sponge/minecivilize/world/inventory/BookOfCivMenu.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "MineCivilize",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mine_civilize",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "CivBook",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "civ_book",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/item/CivBookItem.java",
+          "src/main/resources/assets/minecivilize/models/item/civ_book.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "CivBookOpen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "civ_book_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/procedures/CivBookOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "CivRomeChoose",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "civ_rome_choose",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/client/gui/CivRomeChooseScreen.java",
+          "src/main/java/net/sponge/minecivilize/world/inventory/CivRomeChooseMenu.java",
+          "src/main/java/net/sponge/minecivilize/network/CivRomeChooseButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "RomeCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rome_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/procedures/RomeCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Triggers"
+    },
+    {
+      "name": "GermanyCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "germany_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/procedures/GermanyCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Triggers"
+    },
+    {
+      "name": "RussiaCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "russia_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/procedures/RussiaCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Triggers"
+    },
+    {
+      "name": "CivGermanyChoose",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "civ_germany_choose",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/world/inventory/CivGermanyChooseMenu.java",
+          "src/main/java/net/sponge/minecivilize/client/gui/CivGermanyChooseScreen.java",
+          "src/main/java/net/sponge/minecivilize/network/CivGermanyChooseButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "CivRussiaChoose",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "civ_russia_choose",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/world/inventory/CivRussiaChooseMenu.java",
+          "src/main/java/net/sponge/minecivilize/client/gui/CivRussiaChooseScreen.java",
+          "src/main/java/net/sponge/minecivilize/network/CivRussiaChooseButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "PlayerChooseRome",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_choose_rome",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/procedures/PlayerChooseRomeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Triggers"
+    },
+    {
+      "name": "RomeTable",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rome_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecivilize/recipe/rome_table.json"
+        ]
+      },
+      "path": "~/Triggers"
+    },
+    {
+      "name": "GermanyTable",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "germany_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecivilize/recipe/germany_table.json"
+        ]
+      },
+      "path": "~/Triggers"
+    },
+    {
+      "name": "RussianTable",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "russian_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecivilize/recipe/russian_table.json"
+        ]
+      },
+      "path": "~/Triggers"
+    },
+    {
+      "name": "PlayerChooseGermany",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_choose_germany",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/procedures/PlayerChooseGermanyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Triggers"
+    },
+    {
+      "name": "PlayerChooseRussia",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_choose_russia",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/procedures/PlayerChooseRussiaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Triggers"
+    },
+    {
+      "name": "RomeTableBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rome_table_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecivilize/loot_table/blocks/rome_table_block.json",
+          "src/main/resources/assets/minecivilize/models/item/rome_table_block.json",
+          "src/main/resources/assets/minecivilize/models/block/rome_table_block.json",
+          "src/main/java/net/sponge/minecivilize/block/RomeTableBlockBlock.java",
+          "src/main/resources/assets/minecivilize/blockstates/rome_table_block.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "GermanyTableBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "germany_table_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecivilize/blockstates/germany_table_block.json",
+          "src/main/resources/assets/minecivilize/models/item/germany_table_block.json",
+          "src/main/java/net/sponge/minecivilize/block/GermanyTableBlockBlock.java",
+          "src/main/resources/assets/minecivilize/models/block/germany_table_block.json",
+          "src/main/resources/data/minecivilize/loot_table/blocks/germany_table_block.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "CivRomeTableGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "civ_rome_table_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/network/CivRomeTableGUIButtonMessage.java",
+          "src/main/java/net/sponge/minecivilize/world/inventory/CivRomeTableGUIMenu.java",
+          "src/main/java/net/sponge/minecivilize/client/gui/CivRomeTableGUIScreen.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "CivRussianTableGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "civ_russian_table_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/client/gui/CivRussianTableGUIScreen.java",
+          "src/main/java/net/sponge/minecivilize/network/CivRussianTableGUIButtonMessage.java",
+          "src/main/java/net/sponge/minecivilize/world/inventory/CivRussianTableGUIMenu.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "RussianTableBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "russian_table_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecivilize/models/item/russian_table_block.json",
+          "src/main/resources/data/minecivilize/loot_table/blocks/russian_table_block.json",
+          "src/main/resources/assets/minecivilize/models/block/russian_table_block.json",
+          "src/main/java/net/sponge/minecivilize/block/RussianTableBlockBlock.java",
+          "src/main/resources/assets/minecivilize/blockstates/russian_table_block.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "CivGermanTableGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "civ_german_table_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/world/inventory/CivGermanTableGUIMenu.java",
+          "src/main/java/net/sponge/minecivilize/network/CivGermanTableGUIButtonMessage.java",
+          "src/main/java/net/sponge/minecivilize/client/gui/CivGermanTableGUIScreen.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "RomeTableBlockGUIButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rome_table_block_gui_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/procedures/RomeTableBlockGUIButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "GermanyTableBlockGUIButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "germany_table_block_gui_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/procedures/GermanyTableBlockGUIButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "RussianTableBlockGUIButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "russian_table_block_gui_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/procedures/RussianTableBlockGUIButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ChooseRome",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "choose_rome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecivilize/advancement/choose_rome.json"
+        ]
+      },
+      "path": "~/Achievements"
+    },
+    {
+      "name": "ChooseGermany",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "choose_germany",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecivilize/advancement/choose_germany.json"
+        ]
+      },
+      "path": "~/Achievements"
+    },
+    {
+      "name": "ChooseRussia",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "choose_russia",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecivilize/advancement/choose_russia.json"
+        ]
+      },
+      "path": "~/Achievements"
+    },
+    {
+      "name": "WoodenClub",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_club",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/item/WoodenClubItem.java",
+          "src/main/resources/assets/minecivilize/models/item/wooden_club.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "WoodenClubRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_club_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecivilize/recipe/wooden_club_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "BookCivRec",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "book_civ_rec",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecivilize/recipe/book_civ_rec.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CivRomeTableUnitGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "civ_rome_table_unit_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/client/gui/CivRomeTableUnitGUIScreen.java",
+          "src/main/java/net/sponge/minecivilize/world/inventory/CivRomeTableUnitGUIMenu.java",
+          "src/main/java/net/sponge/minecivilize/network/CivRomeTableUnitGUIButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "PlayerChooseRomeUnitsGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_choose_rome_units_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/procedures/PlayerChooseRomeUnitsGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Triggers"
+    },
+    {
+      "name": "PlayerRomeSpawnBuilder",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_rome_spawn_builder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/procedures/PlayerRomeSpawnBuilderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Triggers"
+    },
+    {
+      "name": "BuilderSpawned",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builder_spawned",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecivilize/advancement/builder_spawned.json"
+        ]
+      },
+      "path": "~/Achievements"
+    },
+    {
+      "name": "BuilderSpawned1",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builder_spawned_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecivilize/advancement/builder_spawned_1.json"
+        ]
+      },
+      "path": "~/Achievements"
+    },
+    {
+      "name": "BuilderSpawned2",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builder_spawned_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecivilize/advancement/builder_spawned_2.json"
+        ]
+      },
+      "path": "~/Achievements"
+    },
+    {
+      "name": "PlayerGermanySpawnBuilder",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_germany_spawn_builder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/procedures/PlayerGermanySpawnBuilderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Triggers"
+    },
+    {
+      "name": "PlayerRussiaSpawnBuilder",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_russia_spawn_builder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/procedures/PlayerRussiaSpawnBuilderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Triggers"
+    },
+    {
+      "name": "CivGermanyTableUnitGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "civ_germany_table_unit_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/client/gui/CivGermanyTableUnitGUIScreen.java",
+          "src/main/java/net/sponge/minecivilize/network/CivGermanyTableUnitGUIButtonMessage.java",
+          "src/main/java/net/sponge/minecivilize/world/inventory/CivGermanyTableUnitGUIMenu.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "CivRussianTableUnitGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "civ_russian_table_unit_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/world/inventory/CivRussianTableUnitGUIMenu.java",
+          "src/main/java/net/sponge/minecivilize/client/gui/CivRussianTableUnitGUIScreen.java",
+          "src/main/java/net/sponge/minecivilize/network/CivRussianTableUnitGUIButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "PlayerChooseGermanyUnitsGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_choose_germany_units_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/procedures/PlayerChooseGermanyUnitsGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Triggers"
+    },
+    {
+      "name": "PlayerChooseRussianUnitsGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_choose_russian_units_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/procedures/PlayerChooseRussianUnitsGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Triggers"
+    },
+    {
+      "name": "BuilderBasic",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builder_basic",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/entity/BuilderBasicEntity.java",
+          "src/main/java/net/sponge/minecivilize/client/renderer/BuilderBasicRenderer.java",
+          "src/main/resources/assets/minecivilize/models/item/builder_basic_spawn_egg.json"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "CloseTheTab",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "close_the_tab",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/procedures/CloseTheTabProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Triggers"
+    },
+    {
+      "name": "BuilderInventory",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builder_inventory",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/network/BuilderInventoryButtonMessage.java",
+          "src/main/java/net/sponge/minecivilize/world/inventory/BuilderInventoryMenu.java",
+          "src/main/java/net/sponge/minecivilize/client/gui/BuilderInventoryScreen.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "BuilderGUI",
+      "type": "gui",
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "builder_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/world/inventory/BuilderGUIMenu.java",
+          "src/main/java/net/sponge/minecivilize/network/BuilderGUIButtonMessage.java",
+          "src/main/java/net/sponge/minecivilize/client/gui/BuilderGUIScreen.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "BuilderOpenGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builder_open_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/procedures/BuilderOpenGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Triggers"
+    },
+    {
+      "name": "BuilderOpenInventoryForPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builder_open_inventory_for_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/procedures/BuilderOpenInventoryForPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Triggers"
+    },
+    {
+      "name": "Historian",
+      "type": "villagerprofession",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "historian",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "HistorianTrade",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "historian_trade",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "CopperBlade",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_blade",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/item/CopperBladeItem.java",
+          "src/main/resources/assets/minecivilize/models/item/copper_blade.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CopperBladeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_blade_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecivilize/recipe/copper_blade_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CopperAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/sponge/minecivilize/item/CopperAxeItem.java",
+          "src/main/resources/assets/minecivilize/models/item/copper_axe.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "CopperAxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecivilize/recipe/copper_axe_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:CopperAxe"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:WoodenClub"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:CopperBlade"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "gui.minecivilize.civ_rome_table_gui.button_stroitielstvo": "Строительство",
+      "advancements.choose_rome.title": "Аве, Вучч!",
+      "gui.minecivilize.civ_rome_table_unit_gui.button_stroitiel": "Строитель",
+      "gui.minecivilize.civ_rome_choose.label_rim1": "Рим",
+      "gui.minecivilize.civ_rome_table_unit_gui.label_usloviie_5_5": "условие:    5         5              ",
+      "gui.minecivilize.civ_rome_table_unit_gui.button_nazad": "Назад",
+      "item.minecivilize.builder_basic_spawn_egg": "Builder Basic Spawn Egg",
+      "gui.minecivilize.civ_german_table_gui.label_hallochen1": "Hallochen!",
+      "item_group.minecivilize.mine_civilize": "Mine Civilize",
+      "advancements.choose_russia.descr": "Да и хуй с этим льдом! Добро пожаловать в Россию!",
+      "gui.minecivilize.civ_rome_choose.label_unikalnyi_iunit_lieghionier": "Уникальный юнит: Легионер",
+      "gui.minecivilize.civ_rome_table_gui.button_tiekhnologhii": "Технологии",
+      "gui.minecivilize.civ_russian_table_unit_gui.label_mieniu_sozdaniia_iunitov": "Меню создания юнитов",
+      "gui.minecivilize.builder_gui.button_nichiegho": "Ничем",
+      "gui.minecivilize.civ_germany_table_unit_gui.button_nazad": "Назад",
+      "block.minecivilize.russian_table_block": "Русский стол Цивилизаций",
+      "gui.minecivilize.civ_russia_choose.label_unikalnyi_iunit_strieltsy": "Уникальный юнит: Стрельцы",
+      "gui.minecivilize.civ_german_table_gui.button_stroitielstvo": "Строительство",
+      "advancements.choose_germany.descr": "NEIN NEIN NEIN NEIN NEIN! Ты выбрал Германию! Angetreten!",
+      "gui.minecivilize.civ_rome_table_unit_gui.label_mieniu_sozdaniia_iunitov": "Меню создания юнитов",
+      "gui.minecivilize.civ_germany_choose.button_za_fatierliand": "За Фатерлянд!",
+      "gui.minecivilize.civ_rome_table_gui.label_avie_impierator_slava_rimskoi_im": "Аве, Император! Слава Римской Империи!",
+      "gui.minecivilize.civ_russia_choose.label_unikalnoie_zdaniie_impieratorskii1": "Уникальное здание: Императорский университет",
+      "gui.minecivilize.civ_rome_table_unit_gui.label_mieniu_sozdaniia_iunitov1": "Меню создания юнитов",
+      "gui.minecivilize.book_of_civ.label_dobro_pozhalovat_v_tiekhnodiemku_mo": "Добро пожаловать в технодемку мода \"MineCivilize!\"",
+      "gui.minecivilize.civ_russian_table_unit_gui.label_mieniu_sozdaniia_iunitov1": "Меню создания юнитов",
+      "gui.minecivilize.civ_russian_table_unit_gui.label_usloviie_5_5_5": "условие:    5         5              ",
+      "gui.minecivilize.civ_germany_table_unit_gui.button_prashchnik": "Пращник",
+      "advancements.builder_spawned.descr": "Вот такая доля наша... Поздравляю с первым строителем!",
+      "gui.minecivilize.civ_rome_choose.label_empty": "Уникальное строение: Бани",
+      "gui.minecivilize.civ_rome_table_gui.button_iunity": "Юниты",
+      "advancements.builder_spawned_2.descr": "Вот такая доля наша... Поздравляю с первым строителем!",
+      "gui.minecivilize.civ_russian_table_unit_gui.button_voin": "Воин",
+      "gui.minecivilize.civ_germany_table_unit_gui.label_usloviie_5_5": "условие:    5         5              ",
+      "gui.minecivilize.civ_rome_table_unit_gui.button_prashchnik": "Пращник",
+      "gui.minecivilize.civ_germany_choose.label_giermaniia1": "Германия",
+      "gui.minecivilize.civ_rome_table_unit_gui.button_voin": "Воин",
+      "gui.minecivilize.civ_rome_choose.label_ogho_rim_da_nu_znachit_avie1": "Ого, Рим, да? Ну значит, Аве!",
+      "gui.minecivilize.civ_russia_choose.button_nazad": "Назад",
+      "gui.minecivilize.civ_russian_table_gui.button_tiekhnologhii": "Технологии",
+      "gui.minecivilize.civ_russian_table_unit_gui.label_usloviie_5_5": "условие:    5         5              ",
+      "gui.minecivilize.builder_gui.label_chiem_moghu_pomoch1": "Чем могу помочь?",
+      "advancements.builder_spawned_1.title": "Солнце светит, негры пашут...",
+      "gui.minecivilize.civ_rome_table_gui.label_avie_impierator_slava_rimskoi_im1": "Аве, Император! Слава Римской Империи!",
+      "advancements.builder_spawned_1.descr": "Вот такая доля наша... Поздравляю с первым строителем!",
+      "item.minecivilize.copper_blade": "Медный меч",
+      "gui.minecivilize.civ_rome_choose.label_unikalnoie_stroieniie_bani": "Уникальное строение: Бани",
+      "gui.minecivilize.civ_russia_choose.label_rossiia": "Россия",
+      "gui.minecivilize.civ_germany_choose.button_nazad": "Назад",
+      "item.minecivilize.civ_book": "Книга цивилизаций",
+      "entity.minecraft.villager.minecivilize.historian": "Историк",
+      "gui.minecivilize.civ_german_table_gui.button_iunity": "Юниты",
+      "gui.minecivilize.civ_germany_table_unit_gui.button_voin": "Воин",
+      "gui.minecivilize.civ_germany_choose.label_unikalnyi_iunit_tievtonskii_rytsa": "Уникальный юнит: Тевтонский рыцарь",
+      "gui.minecivilize.book_of_civ.label_a_poka_vybieri_tsivilizatsiiu1": "А пока выбери цивилизацию.",
+      "gui.minecivilize.civ_germany_table_unit_gui.label_usloviie_5_5_5": "условие:    5         5              ",
+      "gui.minecivilize.civ_rome_choose.label_unikalnyi_iunit_lieghionier1": "Уникальный юнит: Легионер",
+      "gui.minecivilize.civ_rome_choose.label_rim": "Рим",
+      "gui.minecivilize.builder_gui.label_chiem_moghu_pomoch": "Чем могу помочь?",
+      "gui.minecivilize.civ_rome_table_unit_gui.label_usloviie_5_5_5": "условие:    5         5              ",
+      "block.minecivilize.germany_table_block": "Немецкий стол Цивилизаций",
+      "gui.minecivilize.civ_russia_choose.label_unikalnoie_zdaniie_impieratorskii": "Уникальное здание: Императорский университет",
+      "gui.minecivilize.civ_russian_table_gui.button_stroitielstvo": "Строительство",
+      "gui.minecivilize.civ_russian_table_gui.label_biu_chielom_milostivyi_gosudar1": "Бью челом, милостивый Государь!",
+      "gui.minecivilize.civ_russia_choose.label_za_vieru_otchiznu_i_tsaria1": "За Веру, Отчизну и Царя!",
+      "gui.minecivilize.book_of_civ.button_rossiia": "Россия",
+      "advancements.choose_russia.title": "У вас лёд на погонах...",
+      "entity.minecivilize.builder_basic": "Builder Basic",
+      "advancements.choose_rome.descr": "Аве! Твои 220! Смотрю со времен маньяка с топором...  Ты выбрал Рим! Аве!",
+      "gui.minecivilize.civ_germany_table_unit_gui.label_mieniu_sozdaniia_iunitov": "Меню создания юнитов",
+      "gui.minecivilize.builder_gui.button_otkroi_invientar": "Открой инвентарь",
+      "gui.minecivilize.civ_germany_choose.label_unikalnoie_zdaniie_ganza": "Уникальное здание: Ганза",
+      "gui.minecivilize.civ_germany_choose.label_da_zdravstvuiet_barbarossa": "Да здравствует Барбаросса!",
+      "gui.minecivilize.book_of_civ.button_giermaniia": "Германия",
+      "gui.minecivilize.civ_germany_choose.label_unikalnoie_zdaniie_ganza1": "Уникальное здание: Ганза",
+      "gui.minecivilize.civ_russia_choose.button_za_rodinu": "За Родину!",
+      "gui.minecivilize.builder_gui.button_dobud_dierievo": "Добудь дерево",
+      "block.minecivilize.rome_table_block": "Римский стол Цивилизаций",
+      "gui.minecivilize.civ_germany_table_unit_gui.label_mieniu_sozdaniia_iunitov1": "Меню создания юнитов",
+      "gui.minecivilize.civ_rome_choose.label_ogho_rim_da_nu_znachit_avie": "Ого, Рим, да? Ну значит, Аве!",
+      "gui.minecivilize.civ_russian_table_gui.button_iunity": "Юниты",
+      "advancements.builder_spawned_2.title": "Солнце светит, негры пашут...",
+      "gui.minecivilize.civ_germany_choose.label_da_zdravstvuiet_barbarossa1": "Да здравствует Барбаросса!",
+      "gui.minecivilize.civ_russian_table_gui.label_biu_chielom_milostivyi_gosudar": "Бью челом, милостивый Государь!",
+      "gui.minecivilize.civ_rome_choose.button_avie": "АВЕ!",
+      "gui.minecivilize.civ_germany_choose.label_giermaniia": "Германия",
+      "gui.minecivilize.civ_russia_choose.label_rossiia1": "Россия",
+      "gui.minecivilize.civ_german_table_gui.button_tiekhnologhii": "Технологии",
+      "gui.minecivilize.book_of_civ.label_dobro_pozhalovat_v_tiekhnodiemku_mo1": "Добро пожаловать в технодемку мода \"MineCivilize!\"",
+      "item.minecivilize.copper_axe": "Медный топор",
+      "gui.minecivilize.civ_russia_choose.label_unikalnyi_iunit_strieltsy1": "Уникальный юнит: Стрельцы",
+      "gui.minecivilize.builder_inventory.button_zakryt": "Закрыть",
+      "gui.minecivilize.civ_russian_table_unit_gui.button_prashchnik": "Пращник",
+      "gui.minecivilize.civ_rome_choose.button_nazad": "Назад",
+      "item.minecivilize.wooden_club": "Деревянная дубинка",
+      "advancements.builder_spawned.title": "Солнце светит, негры пашут...",
+      "gui.minecivilize.civ_russian_table_unit_gui.button_stroitiel": "Строитель",
+      "gui.minecivilize.book_of_civ.label_chut_pozzhie_ia_pridam_etomu_bozhiesk1": "Чуть позже Я придам этому божеский вид.",
+      "gui.minecivilize.civ_germany_choose.label_unikalnyi_iunit_tievtonskii_rytsa1": "Уникальный юнит: Тевтонский рыцарь",
+      "gui.minecivilize.civ_russia_choose.label_za_vieru_otchiznu_i_tsaria": "За Веру, Отчизну и Царя!",
+      "gui.minecivilize.civ_germany_table_unit_gui.button_stroitiel": "Строитель",
+      "gui.minecivilize.civ_german_table_gui.label_hallochen": "Hallochen!",
+      "gui.minecivilize.book_of_civ.button_rim": "Рим",
+      "advancements.choose_germany.title": "Женщина? А сколько у неё дивизий?",
+      "gui.minecivilize.book_of_civ.label_a_poka_vybieri_tsivilizatsiiu": "А пока выбери цивилизацию.",
+      "gui.minecivilize.civ_russian_table_unit_gui.button_nazad": "Назад",
+      "gui.minecivilize.book_of_civ.label_chut_pozzhie_ia_pridam_etomu_bozhiesk": "Чуть позже Я придам этому божеский вид."
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Procedures",
+        "children": []
+      },
+      {
+        "name": "Recipes",
+        "children": []
+      },
+      {
+        "name": "Triggers",
+        "children": []
+      },
+      {
+        "name": "GUI",
+        "children": []
+      },
+      {
+        "name": "Mobs",
+        "children": []
+      },
+      {
+        "name": "Achievements",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "minecivilize",
+    "modName": "MineCivilize",
+    "version": "1.0.0",
+    "description": "Постройте свою цивилизацию с нуля!",
+    "author": "Sponge",
+    "license": "MIT License",
+    "serverSideOnly": true,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Тестовое... Спасибо MCreator за приколы.",
+    "modElementsPackage": "net.sponge.minecivilize"
+  },
+  "mcreatorVersion": 202400452410
+}

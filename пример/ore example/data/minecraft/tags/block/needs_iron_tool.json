@@ -1,0 +1,12 @@
+{
+  "values": [
+    "denseores:dense_gold_ore",
+    "denseores:dense_deepslate_gold_ore",
+    "denseores:dense_redstone_ore",
+    "denseores:dense_deepslate_redstone_ore",
+    "denseores:dense_emerald_ore",
+    "denseores:dense_deepslate_emerald_ore",
+    "denseores:dense_diamond_ore",
+    "denseores:dense_deepslate_diamond_ore"
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 340,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_giermaniia1",
+          "text": {
+            "fixedValue": "Германия"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 195,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_giermaniia",
+          "text": {
+            "fixedValue": "Германия"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 194,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_da_zdravstvuiet_barbarossa",
+          "text": {
+            "fixedValue": "Да здравствует Барбаросса!"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 62,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_da_zdravstvuiet_barbarossa1",
+          "text": {
+            "fixedValue": "Да здравствует Барбаросса!"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 61,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_unikalnyi_iunit_tievtonskii_rytsa",
+          "text": {
+            "fixedValue": "Уникальный юнит: Тевтонский рыцарь"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 62,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_unikalnyi_iunit_tievtonskii_rytsa1",
+          "text": {
+            "fixedValue": "Уникальный юнит: Тевтонский рыцарь"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 61,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_unikalnoie_zdaniie_ganza",
+          "text": {
+            "fixedValue": "Уникальное здание: Ганза"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 62,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_unikalnoie_zdaniie_ganza1",
+          "text": {
+            "fixedValue": "Уникальное здание: Ганза"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 61,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_nazad",
+          "text": "Назад",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "CivBookOpen"
+          },
+          "width": 53,
+          "height": 20,
+          "x": 69,
+          "y": 170,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_za_fatierliand",
+          "text": "За Фатерлянд!",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "PlayerChooseGermany"
+          },
+          "width": 94,
+          "height": 20,
+          "x": 267,
+          "y": 170,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "germanflag.png",
+          "use1Xscale": false,
+          "x": 247,
+          "y": 49,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

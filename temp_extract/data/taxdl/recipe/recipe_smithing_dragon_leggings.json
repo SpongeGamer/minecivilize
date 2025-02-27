@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": "taxdl:dragon_upgrade_2_smithing_table",
+  "base": "taxdl:dragon_skin_armor_leggings",
+  "addition": "#forge:gems/dragon_scale",
+  "result": {
+    "id": "taxdl:dragon_armor_leggings"
+  }
+}

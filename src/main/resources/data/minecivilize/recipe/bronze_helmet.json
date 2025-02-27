@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bbb",
+    "b b"
+  ],
+  "key": {
+    "b": {
+      "item": "minecivilize:bronze_ingot"
+    }
+  },
+  "result": {
+    "item": "minecivilize:bronze_helmet",
+    "count": 1
+  }
+} 

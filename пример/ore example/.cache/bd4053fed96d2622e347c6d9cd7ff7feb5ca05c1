@@ -1,0 +1,17 @@
+// 1.21	2024-10-21T10:55:28.4774231	Tags for minecraft:item mod id denseores
+959bf271182f5dd89febc752b0d31489ff65e408 data/c/tags/item/ores.json
+6957be9a9b0c5e96a17091a6e41baf5a06c16431 data/c/tags/item/ores/coal.json
+936b7f4082a226774e31d184060fd3a6bb8cabb6 data/c/tags/item/ores/copper.json
+8ae6d4cbe1390545bb127c58b06192054a38f36f data/c/tags/item/ores/diamond.json
+886fecbbbbc9f39d45aaf2b0c254e61e1c818567 data/c/tags/item/ores/emerald.json
+12550fa8ae1d288203d95ce810e8b5cbe1c94e85 data/c/tags/item/ores/gold.json
+7e49fc8f6feb78eb51005c70776c224a914e9a33 data/c/tags/item/ores/iron.json
+65d765a0ca193d2cf7af8db0b2bde3d02cfe6f65 data/c/tags/item/ores/lapis.json
+705d7b11d8cd18c92ac16c9451dd085ed4d83b6a data/c/tags/item/ores/netherite_scrap.json
+bfa230fb90d14876bdc769c790f92c03fd52d3a0 data/c/tags/item/ores/redstone.json
+dc51b84b2bb287463eb07c58c7d91d3bff7366ce data/c/tags/item/ores_in_ground/deepslate.json
+af4f522f923ede68b4afa9ae32b12913a363a668 data/c/tags/item/ores_in_ground/stone.json
+378157c941ada5037322ff127dba8c91891d916b data/c/tags/item/ore_rates/dense.json
+7b4e30bd74191cdced88aabb405cc1a68118ba1f data/denseores/tags/item/dense_deepslate_ores.json
+9c8c0c25ac290bccc43a9943809dbc82384b4bfb data/denseores/tags/item/dense_netherrack_ores.json
+a8ad10e8ab71dc73288726d297dc5c4e0830e39a data/denseores/tags/item/dense_stone_ores.json

@@ -1,0 +1,24 @@
+{
+  "mod_elements": [],
+  "name": "TinOreSmelting",
+  "type": "recipe",
+  "sortid": 3,
+  "compiles": true,
+  "locked_code": false,
+  "registry_name": "tin_ore_smelting",
+  "metadata": {
+    "files": []
+  },
+  "path": "~/Recipes",
+  "properties": {
+    "type": "smelting",
+    "experience": 0.7,
+    "cooking_time": 200,
+    "input": {
+      "item": "minecivilize:tin_ore"
+    },
+    "result": {
+      "item": "minecivilize:tin_ingot"
+    }
+  }
+} 

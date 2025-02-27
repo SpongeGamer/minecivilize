@@ -1,0 +1,166 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 340,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_dobro_pozhalovat_v_tiekhnodiemku_mo",
+          "text": {
+            "fixedValue": "Добро пожаловать в технодемку мода \"MineCivilize!\""
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 97,
+          "y": 51,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_dobro_pozhalovat_v_tiekhnodiemku_mo1",
+          "text": {
+            "fixedValue": "Добро пожаловать в технодемку мода \"MineCivilize!\""
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 96,
+          "y": 51,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_chut_pozzhie_ia_pridam_etomu_bozhiesk",
+          "text": {
+            "fixedValue": "Чуть позже Я придам этому божеский вид."
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 114,
+          "y": 65,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_chut_pozzhie_ia_pridam_etomu_bozhiesk1",
+          "text": {
+            "fixedValue": "Чуть позже Я придам этому божеский вид."
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 113,
+          "y": 65,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_a_poka_vybieri_tsivilizatsiiu",
+          "text": {
+            "fixedValue": "А пока выбери цивилизацию."
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 149,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_a_poka_vybieri_tsivilizatsiiu1",
+          "text": {
+            "fixedValue": "А пока выбери цивилизацию."
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 148,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_rim",
+          "text": "Рим",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "RomeCheck"
+          },
+          "width": 41,
+          "height": 20,
+          "x": 96,
+          "y": 161,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_giermaniia",
+          "text": "Германия",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GermanyCheck"
+          },
+          "width": 68,
+          "height": 20,
+          "x": 177,
+          "y": 161,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_rossiia",
+          "text": "Россия",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "RussiaCheck"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 276,
+          "y": 161,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "mod_elements": [],
+  "name": "TinIngot",
+  "type": "item",
+  "sortid": 2,
+  "compiles": true,
+  "locked_code": false,
+  "registry_name": "tin_ingot",
+  "metadata": {
+    "files": [
+      "src/main/java/net/sponge/minecivilize/item/TinIngotItem.java",
+      "src/main/resources/assets/minecivilize/models/item/tin_ingot.json"
+    ]
+  },
+  "path": "~/Items/Resources",
+  "properties": {
+    "max_stack_size": 64,
+    "fire_resistant": false,
+    "creative_tab": "mine_civilize",
+    "enchantability": 0
+  }
+} 

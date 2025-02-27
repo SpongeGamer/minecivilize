@@ -1,0 +1,195 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 340,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_rim",
+          "text": {
+            "fixedValue": "Рим"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 207,
+          "y": 46,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_rim1",
+          "text": {
+            "fixedValue": "Рим"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 206,
+          "y": 46,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ogho_rim_da_nu_znachit_avie",
+          "text": {
+            "fixedValue": "Ого, Рим, да? Ну значит, Аве!"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 61,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ogho_rim_da_nu_znachit_avie1",
+          "text": {
+            "fixedValue": "Ого, Рим, да? Ну значит, Аве!"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 60,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_unikalnyi_iunit_lieghionier",
+          "text": {
+            "fixedValue": "Уникальный юнит: Легионер"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 61,
+          "y": 80,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_unikalnyi_iunit_lieghionier1",
+          "text": {
+            "fixedValue": "Уникальный юнит: Легионер"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 60,
+          "y": 80,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_unikalnoie_stroieniie_bani",
+          "text": {
+            "fixedValue": "Уникальное строение: Бани"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 61,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "Уникальное строение: Бани"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 60,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_nazad",
+          "text": "Назад",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "CivBookOpen"
+          },
+          "width": 53,
+          "height": 20,
+          "x": 60,
+          "y": 170,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_avie",
+          "text": "АВЕ!",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "PlayerChooseRome"
+          },
+          "width": 43,
+          "height": 20,
+          "x": 321,
+          "y": 170,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "rometabletop.png",
+          "spritesCount": 1,
+          "spriteIndex": {
+            "fixedValue": 0.0
+          },
+          "x": 236,
+          "y": 42,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

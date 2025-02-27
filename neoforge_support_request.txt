@@ -1,0 +1,79 @@
+Hello! I'm experiencing issues with armor textures in NeoForge 1.21.x. There seems to be a discrepancy between the documentation and the actual implementation.
+
+Issue Description:
+The armor is functional (protection values and equip sounds work), but textures are invisible on armor stands and players.
+
+Current Implementation:
+
+1. Armor Material (BronzeArmorMaterial.java):
+```java
+public class BronzeArmorMaterial {
+    private static final EnumMap<ArmorItem.Type, Integer> PROTECTION_VALUES = Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+        map.put(ArmorItem.Type.BOOTS, 2);
+        map.put(ArmorItem.Type.LEGGINGS, 5);
+        map.put(ArmorItem.Type.CHESTPLATE, 6);
+        map.put(ArmorItem.Type.HELMET, 2);
+    });
+
+    public static final ArmorMaterial BRONZE = new ArmorMaterial(
+        PROTECTION_VALUES,
+        12, // enchantability
+        SoundEvents.ARMOR_EQUIP_IRON,
+        () -> Ingredient.of(Items.COPPER_INGOT),
+        List.of(),
+        0.0F, // toughness
+        0.0F  // knockbackResistance
+    );
+}
+```
+
+2. Equipment JSON (assets/minecivilize/equipment/bronze.json):
+```json
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "minecivilize:entity/equipment/bronze_layer_1"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "minecivilize:entity/equipment/bronze_layer_2"
+      }
+    ]
+  }
+}
+```
+
+3. Texture files are located at:
+- assets/minecivilize/textures/entity/equipment/bronze_layer_1.png
+- assets/minecivilize/textures/entity/equipment/bronze_layer_2.png
+
+Issues with Documentation:
+
+1. According to the docs (https://docs.neoforged.net/docs/1.21.x/armor/), we should:
+   - Implement ArmorMaterial as an interface
+   - Use ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.fromNamespaceAndPath("minecivilize", "bronze"))
+   - Register the equipment asset using EquipmentAssets.register()
+
+2. However:
+   - ArmorMaterial appears to be a class, not an interface
+   - The package net.neoforged.neoforge.common.EquipmentAssets doesn't exist
+   - The ArmorMaterial constructor doesn't match the one shown in documentation
+
+I've tried:
+1. Using the constructor approach (current implementation)
+2. Implementing ArmorMaterial as an interface (compilation errors)
+3. Registering equipment assets in the mod's constructor (EquipmentAssets class not found)
+
+Questions:
+1. What is the correct way to implement custom armor textures in NeoForge 1.21.x?
+2. Is the documentation outdated?
+3. If EquipmentAssets is the correct approach, which package contains this class?
+
+Environment:
+- NeoForge version: 1.21.x
+- Operating System: Windows
+- Development Environment: MCreator
+
+Thank you for your help! 

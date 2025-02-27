@@ -1,0 +1,37 @@
+{
+  "mod_elements": [],
+  "name": "TinOre",
+  "type": "block",
+  "sortid": 1,
+  "compiles": true,
+  "locked_code": false,
+  "registry_name": "tin_ore",
+  "metadata": {
+    "files": [
+      "src/main/java/net/sponge/minecivilize/block/TinOreBlock.java",
+      "src/main/resources/assets/minecivilize/models/block/tin_ore.json",
+      "src/main/resources/assets/minecivilize/models/item/tin_ore.json",
+      "src/main/resources/assets/minecivilize/blockstates/tin_ore.json"
+    ]
+  },
+  "path": "~/Blocks/Resources",
+  "properties": {
+    "material": "ROCK",
+    "requires_tool": "pickaxe",
+    "requires_tool_level": 0,
+    "destroy_time": 2.0,
+    "explosion_resistance": 2.0,
+    "light_level": 0,
+    "has_gravity": false,
+    "can_redstone_connect": false,
+    "creative_tab": "mine_civilize",
+    "drop_amount": 1,
+    "has_silk_touch": true,
+    "enchantments_bonus_multiplier": 1.0,
+    "min_drop": 1,
+    "max_drop": 1,
+    "sound": "STONE",
+    "map_color": "STONE",
+    "custom_drop": "minecivilize:raw_tin"
+  }
+} 

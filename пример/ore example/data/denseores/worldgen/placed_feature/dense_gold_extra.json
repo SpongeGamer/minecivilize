@@ -1,0 +1,27 @@
+{
+  "feature": "denseores:ore_dense_gold_extra",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 11
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "max_inclusive": {
+          "above_bottom": 256
+        },
+        "min_inclusive": {
+          "above_bottom": 46
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

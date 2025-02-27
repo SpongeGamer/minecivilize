@@ -1,0 +1,25 @@
+{
+  "mod_elements": [],
+  "name": "CopperPickaxe",
+  "type": "item",
+  "sortid": 8,
+  "compiles": true,
+  "locked_code": false,
+  "registry_name": "copper_pickaxe",
+  "metadata": {
+    "files": [
+      "src/main/java/net/sponge/minecivilize/item/CopperPickaxeItem.java",
+      "src/main/resources/assets/minecivilize/models/item/copper_pickaxe.json"
+    ],
+    "textures": [
+      "src/main/resources/assets/minecivilize/textures/item/copper_pickaxe.png"
+    ]
+  },
+  "path": "~/Items/Resources",
+  "properties": {
+    "max_stack_size": 1,
+    "fire_resistant": false,
+    "creative_tab": "mine_civilize",
+    "enchantability": 10
+  }
+} 

@@ -1,0 +1,7 @@
+{
+    "overlay": {
+        "texture": "taxdl:textures/item/dragon_stick_overlay.png",
+        "emissive": true,
+		"transparency": "translucent"
+    }
+}

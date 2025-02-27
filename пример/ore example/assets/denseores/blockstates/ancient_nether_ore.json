@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "denseores:block/ancient_nether_ore"
+    }
+  }
+}

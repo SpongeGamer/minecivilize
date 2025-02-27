@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_nether",
+  "features": "denseores:ancient_nether_lower",
+  "step": "underground_ores"
+}

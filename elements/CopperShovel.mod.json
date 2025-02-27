@@ -1,0 +1,25 @@
+{
+  "mod_elements": [],
+  "name": "CopperShovel",
+  "type": "item",
+  "sortid": 9,
+  "compiles": true,
+  "locked_code": false,
+  "registry_name": "copper_shovel",
+  "metadata": {
+    "files": [
+      "src/main/java/net/sponge/minecivilize/item/CopperShovelItem.java",
+      "src/main/resources/assets/minecivilize/models/item/copper_shovel.json"
+    ],
+    "textures": [
+      "src/main/resources/assets/minecivilize/textures/item/copper_shovel.png"
+    ]
+  },
+  "path": "~/Items/Resources",
+  "properties": {
+    "max_stack_size": 1,
+    "fire_resistant": false,
+    "creative_tab": "mine_civilize",
+    "enchantability": 10
+  }
+} 

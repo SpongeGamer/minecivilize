@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "denseores:block/dense_nether_gold_ore"
+    }
+  }
+}

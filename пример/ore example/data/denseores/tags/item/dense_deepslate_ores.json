@@ -1,0 +1,12 @@
+{
+  "values": [
+    "denseores:dense_deepslate_coal_ore",
+    "denseores:dense_deepslate_iron_ore",
+    "denseores:dense_deepslate_copper_ore",
+    "denseores:dense_deepslate_gold_ore",
+    "denseores:dense_deepslate_redstone_ore",
+    "denseores:dense_deepslate_emerald_ore",
+    "denseores:dense_deepslate_lapis_ore",
+    "denseores:dense_deepslate_diamond_ore"
+  ]
+}

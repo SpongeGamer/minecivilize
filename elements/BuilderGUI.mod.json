@@ -1,0 +1,102 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 300,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_chiem_moghu_pomoch",
+          "text": {
+            "fixedValue": "Чем могу помочь?"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 177,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_chiem_moghu_pomoch1",
+          "text": {
+            "fixedValue": "Чем могу помочь?"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 176,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_otkroi_invientar",
+          "text": "Открой инвентарь",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "BuilderOpenInventoryForPlayer"
+          },
+          "width": 107,
+          "height": 20,
+          "x": 78,
+          "y": 170,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_nichiegho",
+          "text": "Ничем",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "CloseTheTab"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 294,
+          "y": 170,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_dobud_dierievo",
+          "text": "Добудь дерево",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "HarvestTreesProcedure"
+          },
+          "width": 93,
+          "height": 20,
+          "x": 78,
+          "y": 80,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

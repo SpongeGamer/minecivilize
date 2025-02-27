@@ -1,0 +1,330 @@
+# Minecraft Mod Development Cheatsheet
+
+## 1. Структура проекта
+### 1.1. Организация Creative Tab
+1. Блоки
+   - Руды
+   - Декоративные блоки
+   - Функциональные блоки
+2. Материалы
+   - Сырые руды (raw_*)
+   - Слитки (ingots)
+   - Компоненты крафта
+3. Инструменты
+   - Мечи
+   - Кирки
+   - Топоры
+   - Лопаты
+   - Мотыги
+   (Это должно идти строго в таком порядке)
+4. Броня
+   - Шлемы
+   - Нагрудники
+   - Поножи
+   - Ботинки
+5. Прочее
+   - Книги
+   - Яйца призыва
+   - Специальные предметы
+
+### 1.2. Порядок инициализации
+```java
+// В главном классе мода:
+MinecivilizeModBlocks.REGISTRY.register(modEventBus);
+MinecivilizeModItems.REGISTRY.register(modEventBus);
+ModOreGeneration.register(modEventBus);
+```
+
+## 2. Шаблоны кода
+### 2.1. Блоки и предметы
+```java
+// Новый блок
+public class NewBlock extends Block {
+    public NewBlock() {
+        super(BlockBehaviour.Properties.of()
+            .mapColor(MapColor.STONE)
+            .requiresCorrectToolForDrops()
+            .strength(2.0f, 2.0f)
+            .sound(SoundType.STONE));
+    }
+}
+
+// Новый предмет
+public class NewItem extends Item {
+    public NewItem() {
+        super(new Item.Properties()
+            .stacksTo(64));
+    }
+}
+```
+
+### 2.2. Инструменты
+```java
+// Tier интерфейс (1.21.1)
+public TagKey<Block> getIncorrectBlocksForDrops() {
+    return BlockTags.NEEDS_IRON_TOOL;
+}
+
+// Конструктор инструмента (1.21.1)
+super(BronzeToolTier.BRONZE, new Item.Properties().stacksTo(1).durability(280));
+
+// Важно: durability должно совпадать с параметром uses в Tier
+```
+
+### 2.3. Броня
+```java
+// BronzeArmorMaterial.java
+package net.sponge.minecivilize.item;
+
+import net.minecraft.Util;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.sponge.minecivilize.MinecivilizeMod;
+
+import java.util.EnumMap;
+import java.util.List;
+
+public class BronzeArmorMaterial {
+    public static final DeferredRegister<ArmorMaterial> ARMOR_MATERIALS = 
+        DeferredRegister.create(BuiltInRegistries.ARMOR_MATERIAL, MinecivilizeMod.MODID);
+
+    private static final EnumMap<ArmorItem.Type, Integer> PROTECTION_VALUES = 
+        Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+            map.put(ArmorItem.Type.BOOTS, 2);
+            map.put(ArmorItem.Type.LEGGINGS, 5);
+            map.put(ArmorItem.Type.CHESTPLATE, 6);
+            map.put(ArmorItem.Type.HELMET, 2);
+            map.put(ArmorItem.Type.BODY, 4);
+        });
+
+    public static final ResourceLocation BRONZE_LOCATION = ResourceLocation.tryParse(MinecivilizeMod.MODID + ":bronze");
+
+    public static final DeferredHolder<ArmorMaterial, ArmorMaterial> BRONZE = ARMOR_MATERIALS.register("bronze", 
+        () -> new ArmorMaterial(
+            PROTECTION_VALUES,
+            12, // enchantability
+            SoundEvents.ARMOR_EQUIP_IRON,
+            () -> Ingredient.of(Items.COPPER_INGOT),
+            List.of(new ArmorMaterial.Layer(BRONZE_LOCATION)),
+            0.0F, // toughness
+            0.0F  // knockback resistance
+        ));
+}
+
+// MinecivilizeModItems.java - регистрация предметов брони
+public class MinecivilizeModItems {
+    public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(BuiltInRegistries.ITEM, MinecivilizeMod.MODID);
+    
+    public static final DeferredHolder<Item, Item> BRONZE_HELMET = REGISTRY.register("bronze_helmet", 
+        () -> new ArmorItem((Holder<ArmorMaterial>)BronzeArmorMaterial.BRONZE, ArmorItem.Type.HELMET, 
+            new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(12))));
+    
+    public static final DeferredHolder<Item, Item> BRONZE_CHESTPLATE = REGISTRY.register("bronze_chestplate", 
+        () -> new ArmorItem((Holder<ArmorMaterial>)BronzeArmorMaterial.BRONZE, ArmorItem.Type.CHESTPLATE, 
+            new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(12))));
+    
+    public static final DeferredHolder<Item, Item> BRONZE_LEGGINGS = REGISTRY.register("bronze_leggings", 
+        () -> new ArmorItem((Holder<ArmorMaterial>)BronzeArmorMaterial.BRONZE, ArmorItem.Type.LEGGINGS, 
+            new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(12))));
+    
+    public static final DeferredHolder<Item, Item> BRONZE_BOOTS = REGISTRY.register("bronze_boots", 
+        () -> new ArmorItem((Holder<ArmorMaterial>)BronzeArmorMaterial.BRONZE, ArmorItem.Type.BOOTS, 
+            new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(12))));
+}
+
+// MinecivilizeMod.java - регистрация материала брони
+@Mod(MinecivilizeMod.MODID)
+public class MinecivilizeMod {
+    public MinecivilizeMod(IEventBus modEventBus) {
+        // ... other registrations ...
+        BronzeArmorMaterial.ARMOR_MATERIALS.register(modEventBus);
+    }
+}
+```
+
+### 2.4. Структура файлов для брони
+```
+src/main/resources/
+├── assets/minecivilize/
+│   ├── textures/
+│   │   ├── models/armor/
+│   │   │   ├── bronze_layer_1.png  # текстура для шлема, нагрудника и ботинок (64x32)
+│   │   │   └── bronze_layer_2.png  # текстура для поножей (64x32)
+│   │   └── item/
+│   │       ├── bronze_helmet.png    # иконка предмета
+│   │       ├── bronze_chestplate.png
+│   │       ├── bronze_leggings.png
+│   │       └── bronze_boots.png
+│   └── models/item/
+│       ├── bronze_helmet.json
+│       ├── bronze_chestplate.json
+│       ├── bronze_leggings.json
+│       └── bronze_boots.json
+└── data/minecraft/tags/items/
+    ├── head_armor.json   # тег для шлема
+    ├── chest_armor.json  # тег для нагрудника
+    ├── leg_armor.json    # тег для поножей
+    └── foot_armor.json   # тег для ботинок
+```
+
+## 3. Рецепты и крафт
+### 3.1. Шаблоны рецептов
+```json
+// Меч
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "b",
+    "b",
+    "s"
+  ],
+  "key": {
+    "b": {"item": "minecivilize:bronze_ingot"},
+    "s": {"item": "minecraft:stick"}
+  }
+}
+
+// Топор
+{
+  "pattern": [
+    "bb ",
+    "bs ",
+    " s "
+  ]
+}
+
+// Кирка
+{
+  "pattern": [
+    "bbb",
+    " s ",
+    " s "
+  ]
+}
+
+// Лопата
+{
+  "pattern": [
+    "b",
+    "s",
+    "s"
+  ]
+}
+
+// Мотыга
+{
+  "pattern": [
+    "bb ",
+    " s ",
+    " s "
+  ]
+}
+```
+
+### 3.2. Плавка
+```json
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "minecivilize:tin_ore"
+  },
+  "result": "minecivilize:tin_ingot",
+  "experience": 0.7,
+  "cookingtime": 200
+}
+```
+
+## 4. Генерация руды
+### 4.1. Регистрация через JSON
+```json
+{
+  "feature": "minecivilize:tin_ore",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 8,
+        "max_inclusive": 12
+      }
+    }
+  ]
+}
+```
+
+### 4.2. Программная регистрация
+```java
+public static DeferredHolder<ConfiguredFeature<?, ?>, ConfiguredFeature<?, ?>> TIN_ORE_FEATURE;
+TIN_ORE_FEATURE = CONFIGURED_FEATURES.register("tin_ore", () -> ...);
+Holder.direct(TIN_ORE_FEATURE.get())
+```
+
+## 5. Локализация
+```json
+{
+  "block.minecivilize.tin_ore": "Оловянная руда",
+  "item.minecivilize.raw_tin": "Сырое олово",
+  "item.minecivilize.tin_ingot": "Оловянный слиток",
+  "item.minecivilize.bronze_sword": "Бронзовый меч",
+  "item.minecivilize.bronze_axe": "Бронзовый топор",
+  "item.minecivilize.bronze_pickaxe": "Бронзовая кирка",
+  "item.minecivilize.bronze_shovel": "Бронзовая лопата",
+  "item.minecivilize.bronze_hoe": "Бронзовая мотыга",
+  "itemGroup.minecivilize.mine_civilize": "Mine Civilize"
+}
+```
+
+## 6. Типичные ошибки и решения
+### 6.1. Ошибки инициализации
+- **Проблема**: Использование блоков до регистрации
+- **Решение**: Использовать DeferredHolder и правильный порядок регистрации
+
+### 6.2. Ошибки генерации руды
+- **Проблема**: Неправильный формат count или несуществующие биомы
+- **Решение**: Проверять актуальность биомов и формат JSON
+
+### 6.3. Ошибки текстур брони
+- **Проблема**: NullPointerException при рендеринге брони
+  - **Решение**: Убедиться, что параметр layers в ArmorMaterial не null и не пустой список
+- **Проблема**: Невидимая броня (текстуры не отображаются)
+  - **Решение**: Создать список слоев с корректными путями к текстурам через ArmorMaterial.Layer
+- **Проблема**: Ошибка доступа к ResourceLocation(String,String)
+  - **Решение**: Использовать метод ResourceLocation.tryParse("namespace:path") вместо конструктора
+- **Проблема**: Дублирование путей в текстурах брони в NeoForge 1.21.1
+  - **Решение**: Использовать один слой с конкретным путём к текстуре через ResourceLocation.tryParse
+  - **Примечание**: Если броня отображается фиолетово-чёрной, это означает, что текстуры не найдены или имеют неправильный формат
+
+### 6.4. Импорты
+```java
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.levelgen.GenerationStep;
+import net.neoforged.fml.common.Mod;
+```
+
+## 7. Лучшие практики
+1. Использовать существующие файлы как шаблоны
+2. Проверять совместимость с версией Minecraft/NeoForge
+3. Все названия предметов на русском языке
+4. Соблюдать структуру наименования
+5. Документировать изменения
+6. При неудаче после 2-3 попыток менять подход
+7. Для текстур брони в NeoForge 1.21.1 всегда создавать слои с помощью ArmorMaterial.Layer
+8. Использовать стандартные размеры текстур (64x32 для брони)
+
+## 8. TODO
+1. Добавить секцию по GUI
+2. Расширить примеры рецептов
+3. ✓ Реализовать бронзовую броню
+   - ✓ Создать BronzeArmorMaterial
+   - ✓ Добавить все элементы брони
+   - ✓ Добавить рецепты крафта
+   - ✓ Добавить локализацию
+4. Добавить секцию по анимации
+5. ✓ Обновить информацию по версиям NeoForge 1.21.1 

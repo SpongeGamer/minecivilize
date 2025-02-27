@@ -1,0 +1,25 @@
+{
+  "mod_elements": [],
+  "name": "BronzeIngot",
+  "type": "item",
+  "sortid": 7,
+  "compiles": true,
+  "locked_code": false,
+  "registry_name": "bronze_ingot",
+  "metadata": {
+    "files": [
+      "src/main/java/net/sponge/minecivilize/item/BronzeIngotItem.java",
+      "src/main/resources/assets/minecivilize/models/item/bronze_ingot.json"
+    ],
+    "textures": [
+      "src/main/resources/assets/minecivilize/textures/item/bronze_ingot.png"
+    ]
+  },
+  "path": "~/Items/Resources",
+  "properties": {
+    "max_stack_size": 64,
+    "fire_resistant": false,
+    "creative_tab": "mine_civilize",
+    "enchantability": 0
+  }
+} 

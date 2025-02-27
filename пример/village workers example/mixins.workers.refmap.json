@@ -1,0 +1,36 @@
+{
+  "mappings": {
+    "com/talhanation/workers/mixin/WalkNodeEvaluatorMixin": {
+      "prepare": "Lnet/minecraft/world/level/pathfinder/WalkNodeEvaluator;m_6028_(Lnet/minecraft/world/level/PathNavigationRegion;Lnet/minecraft/world/entity/Mob;)V",
+      "Lnet/minecraft/world/level/pathfinder/NodeEvaluator;prepare(Lnet/minecraft/world/level/PathNavigationRegion;Lnet/minecraft/world/entity/Mob;)V": "Lnet/minecraft/world/level/pathfinder/NodeEvaluator;m_6028_(Lnet/minecraft/world/level/PathNavigationRegion;Lnet/minecraft/world/entity/Mob;)V"
+    },
+    "com/talhanation/workers/mixin/AbstractHorseMixin": {
+      "Lnet/minecraft/world/entity/animal/horse/AbstractHorse;isImmobile()Z": "Lnet/minecraft/world/entity/animal/horse/AbstractHorse;m_6107_()Z",
+      "positionRider": "Lnet/minecraft/world/entity/animal/horse/AbstractHorse;m_19956_(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/entity/Entity$MoveFunction;)V",
+      "isImmobile": "Lnet/minecraft/world/entity/animal/horse/AbstractHorse;m_6107_()Z",
+      "Lnet/minecraft/world/entity/Entity;positionRider(Lnet/minecraft/world/entity/Entity;)V": "Lnet/minecraft/world/entity/Entity;m_7332_(Lnet/minecraft/world/entity/Entity;)V"
+    },
+    "com/talhanation/workers/mixin/CamelMixin": {
+      "travel": "Lnet/minecraft/world/entity/animal/camel/Camel;m_7023_(Lnet/minecraft/world/phys/Vec3;)V",
+      "Lnet/minecraft/world/entity/animal/camel/Camel;travel(Lnet/minecraft/world/phys/Vec3;)V": "Lnet/minecraft/world/entity/animal/camel/Camel;m_7023_(Lnet/minecraft/world/phys/Vec3;)V"
+    }
+  },
+  "data": {
+    "searge": {
+      "com/talhanation/workers/mixin/WalkNodeEvaluatorMixin": {
+        "prepare": "Lnet/minecraft/world/level/pathfinder/WalkNodeEvaluator;m_6028_(Lnet/minecraft/world/level/PathNavigationRegion;Lnet/minecraft/world/entity/Mob;)V",
+        "Lnet/minecraft/world/level/pathfinder/NodeEvaluator;prepare(Lnet/minecraft/world/level/PathNavigationRegion;Lnet/minecraft/world/entity/Mob;)V": "Lnet/minecraft/world/level/pathfinder/NodeEvaluator;m_6028_(Lnet/minecraft/world/level/PathNavigationRegion;Lnet/minecraft/world/entity/Mob;)V"
+      },
+      "com/talhanation/workers/mixin/AbstractHorseMixin": {
+        "Lnet/minecraft/world/entity/animal/horse/AbstractHorse;isImmobile()Z": "Lnet/minecraft/world/entity/animal/horse/AbstractHorse;m_6107_()Z",
+        "positionRider": "Lnet/minecraft/world/entity/animal/horse/AbstractHorse;m_19956_(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/entity/Entity$MoveFunction;)V",
+        "isImmobile": "Lnet/minecraft/world/entity/animal/horse/AbstractHorse;m_6107_()Z",
+        "Lnet/minecraft/world/entity/Entity;positionRider(Lnet/minecraft/world/entity/Entity;)V": "Lnet/minecraft/world/entity/Entity;m_7332_(Lnet/minecraft/world/entity/Entity;)V"
+      },
+      "com/talhanation/workers/mixin/CamelMixin": {
+        "travel": "Lnet/minecraft/world/entity/animal/camel/Camel;m_7023_(Lnet/minecraft/world/phys/Vec3;)V",
+        "Lnet/minecraft/world/entity/animal/camel/Camel;travel(Lnet/minecraft/world/phys/Vec3;)V": "Lnet/minecraft/world/entity/animal/camel/Camel;m_7023_(Lnet/minecraft/world/phys/Vec3;)V"
+      }
+    }
+  }
+}

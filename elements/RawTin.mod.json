@@ -1,0 +1,22 @@
+{
+  "mod_elements": [],
+  "name": "RawTin",
+  "type": "item",
+  "sortid": 5,
+  "compiles": true,
+  "locked_code": false,
+  "registry_name": "raw_tin",
+  "metadata": {
+    "files": [
+      "src/main/java/net/sponge/minecivilize/item/RawTinItem.java",
+      "src/main/resources/assets/minecivilize/models/item/raw_tin.json"
+    ]
+  },
+  "path": "~/Items/Resources",
+  "properties": {
+    "max_stack_size": 64,
+    "fire_resistant": false,
+    "creative_tab": "mine_civilize",
+    "enchantability": 0
+  }
+} 

@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: net.neoforged.snowblower.Main
+Implementation-Version: 2.0.24 (fc4244d68ffe9911d39517a8bc6ebadeb5a686db
+ )
+

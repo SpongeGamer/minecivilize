@@ -1,0 +1,16 @@
+{
+  "_fv": 73,
+  "_type": "villagerprofession",
+  "definition": {
+    "displayName": "Историк",
+    "pointOfInterest": {
+      "value": "Blocks.ENCHANTING_TABLE"
+    },
+    "actionSound": {
+      "value": "block.enchantment_table.use"
+    },
+    "hat": "None",
+    "professionTextureFile": "historian.png",
+    "zombifiedProfessionTextureFile": "historianzombie.png"
+  }
+}

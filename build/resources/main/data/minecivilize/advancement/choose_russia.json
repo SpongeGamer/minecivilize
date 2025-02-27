@@ -1,0 +1,30 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "id": "minecivilize:russian_table_block"
+    },
+    "title": {
+      "translate": "advancements.choose_russia.title"
+    },
+    "description": {
+      "translate": "advancements.choose_russia.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "choose_russia_0": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecivilize:civ_book"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "taxdl:dragon_armor"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "taxdl:dragon_armor"
+      }
+    ]
+  }
+}

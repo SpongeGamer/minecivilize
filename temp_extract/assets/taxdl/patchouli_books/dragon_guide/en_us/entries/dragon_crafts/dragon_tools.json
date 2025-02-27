@@ -1,0 +1,44 @@
+{
+  "name": "Dragon Tools",
+  "icon": "taxdl:dragon_sword",
+  "category": "taxdl:dragon_crafts",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "taxdl:dragon_sword,taxdl:dragon_pickaxe,taxdl:dragon_axe,minecraft:elytra",
+      "title": "Dragon Tools",
+	  "text": "The Dragon Tools contain one sword, one pickaxe and one axe. Crafted from Dragon Scale."
+    },
+	{
+      "type": "patchouli:crafting",
+      "recipe": "taxdl:recipe_dragon_sword",
+	  "title": "Dragon Sword",
+	  "text": "The Dragon Sword is a melee weapon, that is mainly used, to deal damage to entities, or for breaking certain blocks faster than by hand. It is made from Dragon Scale and has high attributes. Harvest Level: 5, Efficiency: 17, Enchantability: 33, Attack Damage: 9, Attack speed 1.6, Durability: 3333."
+    },
+	{
+      "type": "patchouli:crafting",
+      "recipe": "taxdl:recipe_dragon_pickaxe",
+	  "title": "Dragon Pickaxe",
+	  "text": "The Dragon Pickaxe is a tool to mine ores, rocks, rock-based blocks and metal-based blocks quickly and obtain them as items. A Dagon Pickaxe mines faster. It is made from Dragon Scale and has high attributes. Harvest Level: 5, Efficiency: 17, Enchantability: 33, Attack Damage: 7, Attack speed 1.2, Durability: 3333."
+    },
+	{
+      "type": "patchouli:crafting",
+      "recipe": "taxdl:recipe_dragon_axe",
+	  "title": "Dragon Axe",
+	  "text": "The Dragon Axe is a tool, used to hasten the breaking of wood-based blocks, or as a melee weapon that can disable shields it hits. It is made from Dragon Scale and has high attributes. Harvest Level: 5, Efficiency: 17, Enchantability: 33, Attack Damage: 11, Attack speed 1, Durability: 3333."
+    },
+	{
+      "type": "patchouli:crafting",
+      "recipe": "taxdl:recipe_dragon_shield",
+	  "title": "Dragon Shield",
+	  "text": "The Dragon Shield is a tool, used for protecting the player against attacks. It is made from Dragon Scale and has high attributes. Durability: 3333."
+    },
+	{
+      "type": "patchouli:crafting",
+      "recipe": "taxdl:recipe_elytra",
+	  "title": "Dragon Elytra",
+	  "text": "The Dragon Elytra is a rare wing, that are a source of flight in Survival mode. It is made from Dragon Scale."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "taknax_ghaza": {
+    "subtitle": "subtitles.taknax_ghaza",
+    "sounds": [
+      {
+        "name": "taxdl:taknax-ghaza",
+        "stream": true
+      }
+    ]
+  }
+}

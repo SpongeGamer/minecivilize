@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": "taxdl:dragon_upgrade_1_smithing_table",
+  "base": "minecraft:diamond_pickaxe",
+  "addition": "#forge:gems/dragon_scale",
+  "result": {
+    "id": "taxdl:dragon_pickaxe"
+  }
+}

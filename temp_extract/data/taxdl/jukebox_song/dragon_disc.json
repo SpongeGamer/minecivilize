@@ -1,0 +1,8 @@
+{
+  "comparator_output": 0,
+  "description": {
+    "translate": "item.taxdl.dragon_disc.desc"
+  },
+  "length_in_seconds": 480,
+  "sound_event": "taxdl:taknax_ghaza"
+}

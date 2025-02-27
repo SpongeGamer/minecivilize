@@ -1,0 +1,7 @@
+{
+    "overlay": {
+        "texture": "minecraft:textures/item/elytra_overlay.png",
+        "emissive": true,
+		"transparency": "translucent"
+    }
+}

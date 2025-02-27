@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "minecivilize:item/7162be51b298971eb5af72d54c551b249392e35af55c96c66f77bb86c6e97158"
+  }
+}
