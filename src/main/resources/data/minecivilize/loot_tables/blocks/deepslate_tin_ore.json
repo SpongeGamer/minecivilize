@@ -41,7 +41,7 @@
                 {
                   "enchantment": "minecraft:fortune",
                   "formula": "minecraft:uniform_bonus_count",
-                  "function": "minecraft:apply_bonus",
+                  "function": "apply_bonus",
                   "parameters": {
                     "bonusMultiplier": 1
                   }
